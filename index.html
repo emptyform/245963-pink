@@ -2,11 +2,233 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link href="css/style.css" rel="stylesheet">
+    <title>HTML Academy: PINK</title>
   </head>
   <body>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <ul class="page-header__items">
+          <li class="page-header__item  logo">
+            <a class="page-footer__logo" href="#">
+              <img src="http://placehold.it/80x30"  class="page-footer__img-hidden">
+              <span>PINK</span>
+            </a>
+          </li>
+          <li class="page-header__item"><a class="page-header__link" href="#">Главная</a></li>
+          <li class="page-header__item"><a class="page-header__link" href="photo.html">Фотографии</a></li>
+          <li class="page-header__item"><a class="page-header__link" href="form.html">Конкурс</a></li>
+          <li class="page-header__item"><a class="page-header__link" href="https://htmlacademy.ru">Html academy</a></li>
+        </ul>
+      </div>
+    </header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <section class="promo">
+      <div class="promo__wrapper">
+        <div class="promo__preview">
+          <picture>
+            <source media="(min-width:768px) and (max-width: 1199px)" srcset="http://placehold.it/320x400">
+            <source media="(min-width:1200px)" srcset="http://placehold.it/320x400">
+            <img class="promo__img-triangle" src="http://placehold.it/320x400" alt="Мобильник" width="320">
+          </picture>
+        </div>
+        <div class="promo__items  promo__items--wide">
+          <div class="promo__btn-block">
+            <input class="promo__btn  btn" type="submit" value="Скачать приложение">
+          </div>
+          <div class="promo__OS-items">
+            <a class="promo__OS-item  promo__OS-item--iPhone" href="#">
+              <img src="http://placehold.it/65x65">
+            </a>
+            <a class="promo__OS-item  promo__OS-item--Android" href="#">
+              <img src="http://placehold.it/65x65">
+            </a>
+            <a class="promo__OS-item  promo__OS-item--Windows" href="#">
+              <img src="http://placehold.it/65x65">
+            </a>
+          </div>
+          <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </div>
+    </section>
 
+    <section class="slogan">
+      <div class="slogan__wrapper">
+        <div class="slogan__list">
+          <h2 class="slogan__title">Устали от серости мегаполиса?</h2>
+          <h2 class="slogan__title">Нам есть, что вам предложить!</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="reasons">
+      <div class="reasons__wrapper">
+        <div class="reasons__items">
+          <!--<div class="reasons__item  reason">
+            <div class="reason__picture">
+              <img src="http://placehold.it/50x80">
+            </div>-->
+            <div class="reason__item">
+              <h3 class="reason__title">Поднимает настроение</h3>
+              <p class="reason__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </div>
+          </div>
+
+          <div class="reasons__item  reason">
+            <!--<div class="reason__picture">
+              <img src="http://placehold.it/50x80">
+            </div>-->
+            <div class="reason__item">
+              <h3 class="reason__title">Меняет мир вокруг</h3>
+              <p class="reason__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </div>
+          </div>
+
+          <div class="reasons__item  reason">
+            <div class="reason__picture">
+              <img src="http://placehold.it/160x280">
+            </div>
+            <div class="reason__item">
+              <h3 class="reason__title">Заводит новых друзей</h3>
+              <p class="reason__text">Ставьте лайк, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </div>
+          </div>
+
+          <!--<div class="reasons__item  reason  reason--wide">
+            <div class="reason__picture">
+              <img src="http://placehold.it/100x80">
+            </div>
+            <div class="reason__item">
+              <h3 class="reason__title">Эффект на 24 часа!</h3>
+              <p class="reason__text"></p>
+              <a class="reason__link" href="#">
+                <p></p>
+              </a>
+            </div>
+          </div>-->
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="reviews__wrapper">
+        <div class="reviews__slider‐wrapper  slider">
+          <blockquote class="reviews__item  slider__item">
+            <div class="reviews__item">
+              <cite class="reviews__auhor‐name">Николай Петров</cite>
+              <p class="reviews__hidden">25 лет, водитель трамвая</p>
+              <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серый вещи! А ещё я познакомился со своей будующей женой в комментариях к выложенной фотографии!"</p>
+            </div>
+          </blockquote>
+          <blockquote class="reviews__item  reviews__item--hidden  slider__item">
+            <div class="reviews__item">
+              <cite class="reviews__auhor‐name">Викентий Иванович</cite>
+              <p class="reviews__hidden">88 лет, пенсионер</p>
+              <p class="reviews__text">"Ни черта тут не понимаю! Ещё подростки в лифте кнопки палят, при Сталине такого не было!"</p>
+            </div>
+          </blockquote>
+          <blockquote class="reviews__item  reviews__item--hidden  slider__item">
+            <div class="reviews__item">
+              <cite class="reviews__auhor‐name">Абдулла</cite>
+              <p class="reviews__hidden">30 лет, принц из Зимбабве</p>
+              <p class="reviews__text">"Родители оставили богатство, переведите мне 200 долларов и я оформлю его на вас."</p>
+            </div>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="price-list">
+      <div class="price-list__wrapper">
+        <table class="price-list__list  slider">
+          <tr>
+            <th class="price-list__head  price-list__head--hidden">Стандарт</th>
+            <th class="price-list__head">База</th>
+            <th class="price-list__head">Стандарт</th>
+            <th class="price-list__head">Анлим</th>
+          </tr>
+          <tr>
+            <td class="price-list__name">Розовый фильтр</td>
+            <td class="price-list__value"><img src="http://placehold.it/30x30"></td>
+            <td class="price-list__value"><img src="http://placehold.it/30x30"></td>
+            <td class="price-list__value"><img src="http://placehold.it/30x30"></td>
+          </tr>
+          <tr>
+            <td class="price-list__name">Смайлики</td>
+            <td class="price-list__value"><img src="http://placehold.it/30x30"></td>
+            <td class="price-list__value"><img src="http://placehold.it/30x30"></td>
+            <td class="price-list__value"><img src="http://placehold.it/30x30"></td>
+          </tr>
+          <tr>
+            <td class="price-list__name">Комментрии</td>
+            <td class="price-list__value"><img src="http://placehold.it/30x30"></td>
+            <td class="price-list__value"><img src="http://placehold.it/30x30"></td>
+            <td class="price-list__value"><img src="http://placehold.it/30x30"></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <div class="contacts__info-block">
+          <h2 class="contacts__title">Устали от серости мегаполиса?</h2>
+          <div class="contacts__items">
+            <div class="contacts__item">
+              <p class="contacts__text">Звоните:</p>
+              <p class="contacts__info">+7 (812) 555-66-66</p>
+            </div>
+            <div class="contacts__item">
+              <p class="contacts__text">Пишите:</p>
+              <p class="contacts__info">mail@htmlacademy.ru</p>
+            </div>
+            <div class="contacts__item">
+              <p class="contacts__text">Приезжайте в гости:</p>
+              <p class="contacts__info">ул. Большая Конюшенная, 19/8</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="search">
+      <div class="search__wrapper">
+        <div class="search__location">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.3208946163546!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1495891415810" width="320" height="200" frameborder="0" style="border:0" allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!--<footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__contacts">
+          <div class="page-footer__hashtag-container  logo">
+            <a class="page-footer__logo" href="#">
+              <img src="http://placehold.it/30x20">
+              <span>PINK</span>
+            </a>
+          </div>
+          <div class="page-footer__social-items">
+            <a class="page-footer__social-item   page-footer__social-item--twitter" href="https://twitter.com/?lang=ru">
+              <img src="http://placehold.it/20x20">
+            </a>
+            <a class="page-footer__social-item   page-footer__social-item--fb" href="https://facebook.com/htmlacademy">
+              <img src="http://placehold.it/20x20">
+            </a>
+            <a class="page-footer__social-item   page-footer__social-item--youtube" href="https://www.youtube.com/">
+              <img src="http://placehold.it/20x20">
+            </a>
+          </div>
+          <div class="page-footer__copyright">
+            <p class="page-footer__text">Разработано</p>
+            <a class="page-footer__copyright-link" href="https://htmlacademy.ru">
+              <img src="http://placehold.it/20x20">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>-->
   </body>
 </html>
