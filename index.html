@@ -35,16 +35,16 @@
           <picture>
             <source media="(min-width:768px) and (max-width: 1199px)" srcset="http://placehold.it/320x400">
             <source media="(min-width:1200px)" srcset="http://placehold.it/320x400">
-            <img class="downloads__img-triangle" src="http://placehold.it/320x400" alt="Мобильный" width="320">
+            <img class="downloads__img" src="http://placehold.it/320x400" alt="Мобильный" width="320">
           </picture>
         </div>
         <div class="downloads__list">
           <div class="downloads__btn-block  btn">
             <form>
-              <input class="downloads__btn" type="button" value="Скачать приложение" onClick='location.href="#"'>
+              <input class="downloads__btn" type="button" value="Скачать приложение" onClick='location.href="https://vk.com"'>
             </form>
           </div>
-          <div class="downloads__apps-items">
+          <div class="downloads__apps">
             <a class="downloads__apps-item  downloads__apps-item--iphone" href="#">
               <img src="http://placehold.it/65x65" alt="iPhone">
             </a>
@@ -61,10 +61,8 @@
     </section>
 
     <div class="slogan">
-      <div class="slogan_wrapper">
-        <div class="slogan__block">
-          <h2 class="slogan__title">Устали от серости мегаполиса? <span>Нам есть, что вам предложить!</span></h2>
-        </div>
+      <div class="slogan__inner">
+        <h2 class="slogan__title">Устали от серости мегаполиса? <span>Нам есть, что вам предложить!</span></h2>
       </div>
     </div>
 
@@ -72,7 +70,7 @@
       <div class="reasons__wrapper">
         <ul class="reasons__items">
           <li class="reasons__item  reason  reason--no-img">
-            <div class="reason__item">
+            <div class="reason__desc">
               <h3 class="reason__title">Поднимает настроение</h3>
               <p class="reason__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </div>
@@ -80,7 +78,7 @@
           </li>
 
           <li class="reasons__item  reason  reason--no-img">
-            <div class="reason__item">
+            <div class="reason__desc">
               <h3 class="reason__title">Меняет мир вокруг</h3>
               <p class="reason__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </div>
@@ -88,7 +86,7 @@
           </li>
 
           <li class="reasons__item  reason">
-            <div class="reason__item">
+            <div class="reason__desc">
               <h3 class="reason__title">Заводит новых друзей</h3>
               <p class="reason__text">Ставьте лайк, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </div>
@@ -112,24 +110,24 @@
     <section class="reviews">
       <div class="reviews__wrapper">
         <div class="reviews__slider  slider">
-          <blockquote class="reviews__item  slider__item">
-            <div class="reviews__desc">
-              <cite class="reviews__auhor‐name">Николай Петров</cite>
-              <p class="reviews__hidden-for-mobile">25 лет, водитель трамвая</p>
+          <blockquote class="reviews__item  slider__item  slider__item--active">
+            <div class="reviews__content">
+              <cite class="reviews__author‐name">Николай Петров</cite>
+              <p class="reviews__author-desc">25 лет, водитель трамвая</p>
               <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серый вещи! А ещё я познакомился со своей будующей женой в комментариях к выложенной фотографии!"</p>
             </div>
           </blockquote>
-          <blockquote class="reviews__item  slider__item  slider__item--hidden">
-            <div class="reviews__desc">
-              <cite class="reviews__auhor‐name">Викентий Иванович</cite>
-              <p class="reviews__hidden">88 лет, пенсионер</p>
+          <blockquote class="reviews__item  slider__item">
+            <div class="reviews__content">
+              <cite class="reviews__author‐name">Викентий Иванович</cite>
+              <p class="reviews__author-desc">88 лет, пенсионер</p>
               <p class="reviews__text">"Ни черта тут не понимаю! Ещё подростки в лифте кнопки палят, при Сталине такого не было!"</p>
             </div>
           </blockquote>
-          <blockquote class="reviews__item  slider__item  slider__item--hidden">
-            <div class="reviews__desc">
-              <cite class="reviews__auhor‐name">Абдулла</cite>
-              <p class="reviews__hidden">30 лет, принц из Зимбабве</p>
+          <blockquote class="reviews__item  slider__item">
+            <div class="reviews__content">
+              <cite class="reviews__author‐name">Абдулла</cite>
+              <p class="reviews__author-desc">30 лет, принц из Зимбабве</p>
               <p class="reviews__text">"Родители оставили богатство, переведите мне 200 долларов и я оформлю его на вас."</p>
             </div>
           </blockquote>
@@ -137,32 +135,32 @@
       </div>
     </section>
 
-    <section class="price-list">
-      <div class="price-list__wrapper">
-        <table class="price-list__items  slider">
+    <section class="prices">
+      <div class="prices__wrapper">
+        <table class="prices__table  slider">
           <tr>
-            <th class="price-list__head  price-list__head--for-mobile">Стандарт</th>
-            <th class="price-list__head">База <span>1,99 USD</span></th>
-            <th class="price-list__head">Стандарт <span>3,99 USD</span></th>
-            <th class="price-list__head">Анлим <span>9,99 USD</span></th>
+            <th class="prices__head  prices__head--for-mobile">Стандарт</th>
+            <th class="prices__head">База <span>1,99 USD</span></th>
+            <th class="prices__head">Стандарт <span>3,99 USD</span></th>
+            <th class="prices__head">Анлим <span>9,99 USD</span></th>
           </tr>
           <tr>
-            <td class="price-list__name">Розовый фильтр</td>
-            <td class="price-list__included">+</td>
-            <td class="price-list__included">+</td>
-            <td class="price-list__included">+</td>
+            <td class="prices__name">Розовый фильтр</td>
+            <td class="prices__included">+</td>
+            <td class="prices__included">+</td>
+            <td class="prices__included">+</td>
           </tr>
           <tr>
-            <td class="price-list__name">Смайлики</td>
-            <td class="price-list__excluded">-</td>
-            <td class="price-list__included">+</td>
-            <td class="price-list__included">+</td>
+            <td class="prices__name">Смайлики</td>
+            <td class="prices__excluded">-</td>
+            <td class="prices__included">+</td>
+            <td class="prices__included">+</td>
           </tr>
           <tr>
-            <td class="price-list__name">Комментрии</td>
-            <td class="price-list__excluded">-</td>
-            <td class="price-list__excluded">-</td>
-            <td class="price-list__included">+</td>
+            <td class="prices__name">Комментрии</td>
+            <td class="prices__excluded">-</td>
+            <td class="prices__excluded">-</td>
+            <td class="prices__included">+</td>
           </tr>
         </table>
       </div>
@@ -188,7 +186,7 @@
               </li >
             </ul>
           </div>
-          <div class="contacts__location">
+          <div class="contacts__map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.3208946163546!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1495891415810" width="320" height="200" style="border:0" allowfullscreen>
             </iframe>
           </div>
@@ -198,7 +196,7 @@
 
     <!--<footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__contacts">
+        <div class="page-footer__feedback">
           <div class="page-footer__item">
             <a class="page-footer__logo" href="#">
               <img src="http://placehold.it/30x20" alt="Лого">PINK
