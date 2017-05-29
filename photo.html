@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <link href="css/style.css" rel="stylesheet">
-    <title>Фото</title>
+    <title>Фотографии</title>
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
         <ul class="page-header__items">
           <li class="page-header__item  page-header__item--logo">
-            <a class="page-header__logo" href="#">PINK</a>
+            <a class="page-header__logo-link" href="#">PINK</a>
           </li>
           <li class="page-header__item">
             <a class="page-header__link" href="index.html">Главная</a>
@@ -29,232 +29,207 @@
       </div>
     </header>
 
-    <div class="promo">
-      <div class="promo__wrapper">
-        <a class="promo__link-full-image" href="#">
-          <picture>
-            <source media="(min-width:768px) and (max-width: 1199px)" srcset="http://placehold.it/320x170">
-            <source media="(min-width:1200px)" srcset="http://placehold.it/320x170">
-            <img class="promo__img" src="http://placehold.it/320x170" alt="Фото пользователей">
-          </picture>
-        </a>
-        <p class="promo__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-      </div>
+    <div class="page-title-wrapper">
+      <h1 class="page-title-wrapper__heading">Фотографии пользователей</h1>
+    </div>
+
+    <div class="slogan">
+      <p class="slogan__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших</p>
     </div>
 
     <section class="posts">
       <div class="posts__wrapper">
-        <div class="posts__items">
 
-          <article class="posts__item  post">
-            <a class="post__link-full-image" href="#">
-              <picture class="post__image  post__image--wide">
-                <source media="(min-width:768px) and (max-width: 1199px)" srcset="http://placehold.it/320x137">
-                <source media="(min-width:1200px)" srcset="http://placehold.it/320x137">
-                <img class="post_picture" src="http://placehold.it/320x137" srcset="http://placehold.it/320x137" alt="Панорама дня">
-              </picture>
-            </a>
-            <div class="post___label-block">
-              <p class="post___label-text">Панорама дня</p>
+        <article class="posts__item  post">
+          <a class="post__link-full-image" href="#">
+            <picture class="post__image  post__image--wide">
+              <source media="(min-width:768px) and (max-width: 1199px)" srcset="http://placehold.it/320x137">
+              <source media="(min-width:1200px)" srcset="http://placehold.it/320x137">
+              <img class="post_img" src="http://placehold.it/320x137" srcset="http://placehold.it/320x137" alt="Панорама дня">
+            </picture>
+          </a>
+          <div class="post___label-block">
+            <p class="post___label-text">Панорама дня</p>
+          </div>
+          <div class="post__container  post__container--wide">
+            <blockquote class="post__blockquote">
+              <cite class="post__author‐name">Анна <span>(5 минут назад)</span></cite>
+              <p class="post__text">Прыгать или нет? Напишите в комментариях свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            </blockquote>
+            <div class="post__like-container">
+              <button class="post__like" type="submit"><img src="http://placehold.it/15x15" alt="Лайк"></button>
+              <span class="post__amount">Нравится: 215</span>
             </div>
-            <div class="post__container  post__container--wide">
-              <blockquote class="post__blockquote">
-                <cite class="post__author‐name">Анна <span>(5 минут назад)</span></cite>
-                <p class="post__text">Прыгать или нет? Напишите в комментариях свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              </blockquote>
-              <div class="post__like-container">
-                <a class="post__like" href="#">
-                  <img class="post__img-like" src="http://placehold.it/15x15" alt="Лайк">
-                </a>
-                <span class="post__amount">Нравится: 215</span>
-              </div>
-            </div>
-          </article>
+          </div>
+        </article>
 
-          <article class="posts__item  post">
-            <a class="post__link-full-image" href="#">
-              <picture class="post__image">
-                <source media="(min-width:768px) and (max-width: 1199px)" srcset="http://placehold.it/280x180">
-                <source media="(min-width:1200px)" srcset="http://placehold.it/280x180">
-                <img class="post_picture" src="http://placehold.it/280x180" srcset="http://placehold.it/280x180" alt="Авто">
-              </picture>
-            </a>
-            <div class="post__container">
-              <blockquote class="post__blockquote">
-                <cite class="post__author‐name">Левон <span>(5 часов назад)</span></cite>
-                <p class="post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              </blockquote>
-              <div class="post__like-container">
-                <a class="post__like" href="#">
-                  <img class="post__img-like" src="http://placehold.it/15x15" alt="Лайк">
-                </a>
-                <span class="post__amount">Нравится: 356</span>
-              </div>
+        <article class="posts__item  post">
+          <a class="post__link-full-image" href="#">
+            <picture class="post__image">
+              <source media="(min-width:768px) and (max-width: 1199px)" srcset="http://placehold.it/280x180">
+              <source media="(min-width:1200px)" srcset="http://placehold.it/280x180">
+              <img class="post_img" src="http://placehold.it/280x180" srcset="http://placehold.it/280x180" alt="Авто">
+            </picture>
+          </a>
+          <div class="post__container">
+            <blockquote class="post__blockquote">
+              <cite class="post__author‐name">Левон <span>(5 часов назад)</span></cite>
+              <p class="post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            </blockquote>
+            <div class="post__like-container">
+              <button class="post__like" type="submit"><img src="http://placehold.it/15x15" alt="Лайк"></button>
+              <span class="post__amount">Нравится: 356</span>
             </div>
-          </article>
+          </div>
+        </article>
 
-          <article class="posts__item  post">
-            <a class="post__link-full-image" href="#">
-              <picture class="post__image">
-                <source media="(min-width:768px) and (max-width: 1199px)" srcset="http://placehold.it/280x180">
-                <source media="(min-width:1200px)" srcset="http://placehold.it/280x180">
-                <img class="post_picture" src="http://placehold.it/280x180" srcset="http://placehold.it/280x180" alt="Барабаны">
-              </picture>
-            </a>
-            <div class="post__container">
-              <blockquote class="post__blockquote">
-                <cite class="post__author‐name">Антон <span>(12 часов назад)</span></cite>
-                <p class="post__text">Соседи будут рады!</p>
-              </blockquote>
-              <div class="post__like-container">
-                <a class="post__like" href="#">
-                  <img class="post__img-like" src="http://placehold.it/15x15" alt="Лайк">
-                </a>
-                <span class="post__amount">Нравится: 666</span>
-              </div>
+        <article class="posts__item  post">
+          <a class="post__link-full-image" href="#">
+            <picture class="post__image">
+              <source media="(min-width:768px) and (max-width: 1199px)" srcset="http://placehold.it/280x180">
+              <source media="(min-width:1200px)" srcset="http://placehold.it/280x180">
+              <img class="post_img" src="http://placehold.it/280x180" srcset="http://placehold.it/280x180" alt="Барабаны">
+            </picture>
+          </a>
+          <div class="post__container">
+            <blockquote class="post__blockquote">
+              <cite class="post__author‐name">Антон <span>(12 часов назад)</span></cite>
+              <p class="post__text">Соседи будут рады!</p>
+            </blockquote>
+            <div class="post__like-container">
+              <button class="post__like" type="submit"><img src="http://placehold.it/15x15" alt="Лайк"></button>
+              <span class="post__amount">Нравится: 666</span>
             </div>
-          </article>
+          </div>
+        </article>
 
-          <article class="posts__item  post">
-            <a class="post__link-full-image" href="#">
-              <picture class="post__image">
-                <source media="(min-width:768px) and (max-width: 1199px)" srcset="http://placehold.it/280x180">
-                <source media="(min-width:1200px)" srcset="http://placehold.it/280x180">
-                <img class="post_picture" src="http://placehold.it/280x180" srcset="http://placehold.it/280x180" alt="Неволя">
-              </picture>
-            </a>
-            <div class="post__container">
-              <blockquote class="post__blockquote">
-                <cite class="post__author‐name">Борис <span>(20 часов назад)</span></cite>
-                <p class="post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              </blockquote>
-              <div class="post__like-container">
-                <a class="post__like" href="#">
-                  <img class="post__img-like" src="http://placehold.it/15x15" alt="Лайк">
-                </a>
-                <span class="post__amount">Нравится: 215</span>
-              </div>
+        <article class="posts__item  post">
+          <a class="post__link-full-image" href="#">
+            <picture class="post__image">
+              <source media="(min-width:768px) and (max-width: 1199px)" srcset="http://placehold.it/280x180">
+              <source media="(min-width:1200px)" srcset="http://placehold.it/280x180">
+              <img class="post_img" src="http://placehold.it/280x180" srcset="http://placehold.it/280x180" alt="Неволя">
+            </picture>
+          </a>
+          <div class="post__container">
+            <blockquote class="post__blockquote">
+              <cite class="post__author‐name">Борис <span>(20 часов назад)</span></cite>
+              <p class="post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            </blockquote>
+            <div class="post__like-container">
+              <button class="post__like" type="submit"><img src="http://placehold.it/15x15" alt="Лайк"></button>
+              <span class="post__amount">Нравится: 215</span>
             </div>
-          </article>
+          </div>
+        </article>
 
-          <article class="posts__item  post">
-            <a class="post__link-full-image" href="#">
-              <picture class="post__image">
-                <source media="(min-width:768px) and (max-width: 1199px)" srcset="http://placehold.it/280x180">
-                <source media="(min-width:1200px)" srcset="http://placehold.it/280x180">
-                <img class="post_picture" src="http://placehold.it/280x180" srcset="http://placehold.it/280x180" alt="Бахча">
-              </picture>
-            </a>
-            <div class="post__container">
-              <blockquote class="post__blockquote">
-                <cite class="post__author‐name">Сергей <span>(25 часов назад)</span></cite>
-                <p class="post__text">Самая кубанская в мире!</p>
-              </blockquote>
-              <div class="post__like-container">
-                <a class="post__like" href="#">
-                  <img class="post__img-like" src="http://placehold.it/15x15" alt="Лайк">
-                </a>
-                <span class="post__amount">Нравится: 4</span>
-              </div>
+        <article class="posts__item  post">
+          <a class="post__link-full-image" href="#">
+            <picture class="post__image">
+              <source media="(min-width:768px) and (max-width: 1199px)" srcset="http://placehold.it/280x180">
+              <source media="(min-width:1200px)" srcset="http://placehold.it/280x180">
+              <img class="post_img" src="http://placehold.it/280x180" srcset="http://placehold.it/280x180" alt="Бахча">
+            </picture>
+          </a>
+          <div class="post__container">
+            <blockquote class="post__blockquote">
+              <cite class="post__author‐name">Сергей <span>(25 часов назад)</span></cite>
+              <p class="post__text">Самая кубанская в мире!</p>
+            </blockquote>
+            <div class="post__like-container">
+              <button class="post__like" type="submit"><img src="http://placehold.it/15x15" alt="Лайк"></button>
+              <span class="post__amount">Нравится: 4</span>
             </div>
-          </article>
+          </div>
+        </article>
 
-          <article class="posts__item  post">
-            <a class="post__link-full-image" href="#">
-              <picture class="post__image">
-                <source media="(min-width:768px) and (max-width: 1199px)" srcset="http://placehold.it/280x180">
-                <source media="(min-width:1200px)" srcset="http://placehold.it/280x180">
-                <img class="post_picture" src="http://placehold.it/280x180" srcset="http://placehold.it/280x180" alt="Горы">
-              </picture>
-            </a>
-            <div class="post__container">
-              <blockquote class="post__blockquote">
-                <cite class="post__author‐name">Максим <span>(40 часов назад)</span></cite>
-                <p class="post__text">Где снег-то?</p>
-              </blockquote>
-              <div class="post__like-container">
-                <a class="post__like" href="#">
-                  <img class="post__img-like" src="http://placehold.it/15x15" alt="Лайк">
-                </a>
-                <span class="post__amount">Нравится: 150</span>
-              </div>
+        <article class="posts__item  post">
+          <a class="post__link-full-image" href="#">
+            <picture class="post__image">
+              <source media="(min-width:768px) and (max-width: 1199px)" srcset="http://placehold.it/280x180">
+              <source media="(min-width:1200px)" srcset="http://placehold.it/280x180">
+              <img class="post_img" src="http://placehold.it/280x180" srcset="http://placehold.it/280x180" alt="Горы">
+            </picture>
+          </a>
+          <div class="post__container">
+            <blockquote class="post__blockquote">
+              <cite class="post__author‐name">Максим <span>(40 часов назад)</span></cite>
+              <p class="post__text">Где снег-то?</p>
+            </blockquote>
+            <div class="post__like-container">
+              <button class="post__like" type="submit"><img src="http://placehold.it/15x15" alt="Лайк"></button>
+              <span class="post__amount">Нравится: 150</span>
             </div>
-          </article>
+          </div>
+        </article>
 
-          <article class="posts__item  post">
-            <a class="post__link-full-image" href="#">
-              <picture class="post__image">
-                <source media="(min-width:768px) and (max-width: 1199px)" srcset="http://placehold.it/280x180">
-                <source media="(min-width:1200px)" srcset="http://placehold.it/280x180">
-                <img class="post_picture" src="http://placehold.it/280x180" srcset="http://placehold.it/280x180" alt="Полёт">
-              </picture>
-            </a>
-            <div class="post__container">
-              <blockquote class="post__blockquote">
-                <cite class="post__author‐name">Надежда <span>(45 часов назад)</span></cite>
-                <p class="post__text">Всем GM и взаимные лайки!</p>
-              </blockquote>
-              <div class="post__like-container">
-                <a class="post__like" href="#">
-                  <img class="post__img-like" src="http://placehold.it/15x15" alt="Лайк">
-                </a>
-                <span class="post__amount">Нравится: 2560</span>
-              </div>
+        <article class="posts__item  post">
+          <a class="post__link-full-image" href="#">
+            <picture class="post__image">
+              <source media="(min-width:768px) and (max-width: 1199px)" srcset="http://placehold.it/280x180">
+              <source media="(min-width:1200px)" srcset="http://placehold.it/280x180">
+              <img class="post_img" src="http://placehold.it/280x180" srcset="http://placehold.it/280x180" alt="Полёт">
+            </picture>
+          </a>
+          <div class="post__container">
+            <blockquote class="post__blockquote">
+              <cite class="post__author‐name">Надежда <span>(45 часов назад)</span></cite>
+              <p class="post__text">Всем GM и взаимные лайки!</p>
+            </blockquote>
+            <div class="post__like-container">
+              <button class="post__like" type="submit"><img src="http://placehold.it/15x15" alt="Лайк"></button>
+              <span class="post__amount">Нравится: 2560</span>
             </div>
-          </article>
-        </div>
+          </div>
+        </article>
+        <h2 class="posts__title">Затмите их всех!</h2>
+        <h2 class="posts__title">Выкладывайте всё, что накопилось в телефоне!</h2>
       </div>
     </section>
 
-    <div class="appeal">
-      <div class="appeal__inner">
-        <h3 class="appeal__title">Затмите их всех! <span>Выкладывайте всё, что накопилось в телефоне!</span></h3>
-      </div>
-    </div>
-
-    <section class="timeline-composer">
-      <div class="timeline-composer__wrapper">
-        <a class="timeline-composer__link-full-image" href="#">
-          <picture class="timeline-composer__image">
+    <section class="upload">
+      <div class="upload__wrapper">
+        <a class="upload__link-full-image" href="#">
+          <picture class="upload__image">
             <source media="(min-width:768px) and (max-width: 1199px)" srcset="http://placehold.it/280x375">
             <source media="(min-width:1200px)" srcset="http://placehold.it/280x375">
-            <img class="timeline-composer__picture" src="http://placehold.it/280x375" srcset="http://placehold.it/280x375" alt="Ваше фото">
+            <img class="upload__img" src="http://placehold.it/280x375" srcset="http://placehold.it/280x375" alt="Ваше фото">
           </picture>
         </a>
-        <div class="timeline-composer__control-bar">
-          <div class="timeline-composer__items">
-            <div class="timeline-composer__item">
-              <img class="timeline-composer__tool  timeline-composer__tool--frame" src="http://placehold.it/45x45" alt="frame">
-              <div class="timeline-composer__tool-bar">
-                <div class="timeline-composer__dot"></div>
+        <div class="upload__control-bar">
+          <ul class="upload__items">
+            <li class="upload__item">
+              <img class="upload__tool  upload__tool--frame" src="http://placehold.it/45x45" alt="frame">
+              <div class="upload__tool-bar">
+                <div class="upload__dot"></div>
               </div>
-            </div>
+            </li>
 
-            <div class="timeline-composer__item">
-              <img class="timeline-composer__tool  timeline-composer__tool--pouring" src="http://placehold.it/45x45" alt="pouring">
-              <div class="timeline-composer__tool-bar">
-                <div class="timeline-composer__dot"></div>
+            <li class="upload__item">
+              <img class="upload__tool  upload__tool--pouring" src="http://placehold.it/45x45" alt="pouring">
+              <div class="upload__tool-bar">
+                <div class="upload__dot"></div>
               </div>
-            </div>
+            </li>
 
-            <div class="timeline-composer__item">
-              <img class="timeline-composer__tool  timeline-composer__tool--color" src="http://placehold.it/45x45" alt="color">
-              <div class="timeline-composer__tool-bar  timeline-composer__tool-bar--active">
-                <div class="timeline-composer__dot"></div>
+            <li class="upload__item">
+              <img class="upload__tool  upload__tool--color" src="http://placehold.it/45x45" alt="color">
+              <div class="upload__tool-bar  upload__tool-bar--active">
+                <div class="upload__dot"></div>
               </div>
-            </div>
-          </div>
-          <input class="timeline-composer__btn  btn"  type="submit"  value="Запостить">
-          <input class="timeline-composer__btn  btn"  type="reset"  value="Отмена">
+            </li>
+          </ul>
+          <button class="upload__btn-upload  btn" type="submit">Запостить</button>
+          <button class="upload__btn-cancel  btn" type="reset">Отмена</button>
         </div>
       </div>
     </section>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__item">
-          <a class="page-footer__logo" href="#">
-            <img src="http://placehold.it/65x45" alt="Лого">PINK
+        <div class="page-footer__logo">
+          <a class="page-footer__logo-link" href="#">
+            <img class="page-footer__logo-link" src="http://placehold.it/65x45" alt="Лого">PINK
           </a>
         </div>
 
@@ -271,9 +246,9 @@
         </div>
 
         <div class="page-footer__copyright">
-          <p class="page-footer__text">Разработано</p>
+          <p class="page-footer__developed">Разработано</p>
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="http://placehold.it/30x35" alt="Лого Академии">
+            <img class="page-footer__copyright-img" src="http://placehold.it/30x35" alt="Лого Академии">
           </a>
         </div>
       </div>
