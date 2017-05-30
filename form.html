@@ -29,107 +29,108 @@
       </div>
     </header>
 
-    <div class="page-title  page-title--small">
-      <div class="page-title__title-block">
-        <h1 class="page-title__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-      </div>
-      <p class="page-title__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+    <div class="page-title-wrapper">
+      <h1 class="page-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
 
-    <form class="form">
+    <div class="slogan">
+      <p class="slogan__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+    </div>
+
+    <form class="form"  action="https://echo.htmlacademy.ru/">
       <div class="form__wrapper">
-        <div class="form__field  field-text">
-        <div class="field-text__items">
-          <label class="field-text__item">
-            <span class="field-text__text">Фамилия:</span>
-            <input class="field-text__input" type="text" name="name-1" placeholder="Укажите фимилию*">
+        <section class="form__fields  fields-text">
+        <fieldset class="fields-text__items">
+          <label class="fields-text__item">
+            <span class="fields-text__title">Фамилия:</span>
+            <input class="fields-text__input" type="text" name="name-1" placeholder="Укажите фимилию*" required>
           </label>
-          <label class="field-text__item">
-            <span class="field-text__text">Имя:</span>
-            <input class="field-text__input" type="text" name="name-2" placeholder="Введите ваше имя*">
+          <label class="fields-text__item">
+            <span class="fields-text__title">Имя:</span>
+            <input class="fields-text__input" type="text" name="name-2" placeholder="Введите ваше имя*" required>
           </label>
-          <label class="field-text__item">
-            <span class="field-text__text">Отчество:</span>
-            <input class="field-text__input" type="text" name="name-3" placeholder="Ну и отчество тоже">
+          <label class="fields-text__item">
+            <span class="fields-text__title">Отчество:</span>
+            <input class="fields-text__input" type="text" name="name-3" placeholder="Ну и отчество тоже">
           </label>
-        </div>
-      </div>
-
-      <section class="form__field  field-checkbox">
-        <h3 class="field-checkbox__title">Ваши безбашенные достижения в путешествии</h3>
-        <div class="field-checkbox__items">
-          <label class="field-checkbox__item">
-            <input class="field-checkbox__input" type="checkbox" name="checkbox-1" checked>
-            <span class="field-checkbox__text">Сделал селфи с акулой</span>
-          </label>
-          <label class="field-checkbox__item">
-            <input class="field-checkbox__input" type="checkbox" name="checkbox-2" checked>
-            <span class="field-checkbox__text">Обгорел на пляже</span>
-          </label>
-          <label class="field-checkbox__item">
-            <input class="field-checkbox__input" type="checkbox" name="checkbox-3">
-            <span class="field-checkbox__text">Видел Чака Норриса</span>
-          </label>
-          <label class="field-checkbox__item">
-            <input class="field-checkbox__input" type="checkbox" name="checkbox-4">
-            <span class="field-checkbox__text">Накупил сувениров</span>
-          </label>
-          <label class="field-checkbox__item">
-            <input class="field-checkbox__input" type="checkbox" name="checkbox-5" checked>
-            <span class="field-checkbox__text">Удержал башню</span>
-          </label>
-          <label class="field-checkbox__item">
-            <input class="field-checkbox__input" type="checkbox" name="checkbox-6">
-            <span class="field-checkbox__text">Разгромил отель</span>
-          </label>
-        </div>
+        </fieldset>
       </section>
 
-      <section class="form__field  field-text">
-        <h3 class="form__field__title">Контактная информация</h3>
-        <div class="field-text__items">
-          <label class="field-text__item">
-            <span class="field-text__text">Номер телефона:</span>
-            <input class="field-text__input" type="tel" name="tel" placeholder="Номер, пожалуйста">
-            <span class="field-text__icon  field-text__icon--phone"></span>
+      <section class="form__fields  fields-checkbox">
+        <fieldset class="fields-checkbox__items">
+          <legend class="fields-checkbox__title">Ваши безбашенные достижения в путешествии</legend>
+          <label class="fields-checkbox__item">
+            <input class="fields-checkbox__input" type="checkbox" name="checkbox-1" checked>
+            <span class="fields-checkbox__text">Сделал селфи с акулой</span>
           </label>
-          <label class="field-text__item">
-            <span class="field-text__text">Адресок почты:</span>
-            <input class="field-text__input" type="email" name="email" placeholder="Введите почту*">
-            <span class="field-text__icon  field-text__icon--email"></span>
+          <label class="fields-checkbox__item">
+            <input class="fields-checkbox__input" type="checkbox" name="checkbox-2" checked>
+            <span class="fields-checkbox__text">Обгорел на пляже</span>
           </label>
-        </div>
+          <label class="fields-checkbox__item">
+            <input class="fields-checkbox__input" type="checkbox" name="checkbox-3">
+            <span class="fields-checkbox__text">Видел Чака Норриса</span>
+          </label>
+          <label class="fields-checkbox__item">
+            <input class="fields-checkbox__input" type="checkbox" name="checkbox-4">
+            <span class="fields-checkbox__text">Накупил сувениров</span>
+          </label>
+          <label class="fields-checkbox__item">
+            <input class="fields-checkbox__input" type="checkbox" name="checkbox-5" checked>
+            <span class="fields-checkbox__text">Удержал башню</span>
+          </label>
+          <label class="fields-checkbox__item">
+            <input class="fields-checkbox__input" type="checkbox" name="checkbox-6">
+            <span class="fields-checkbox__text">Разгромил отель</span>
+          </label>
+        </fieldset>
       </section>
 
-      <section class="form__field  field-radio">
-        <h3 class="field-radio__title">С каким приложением путешествовали?</h3>
-        <div class="field-radio__items">
-          <label class="field-radio__item">
-            <input class="field-radio__input" type="radio" name="radio" value="1" checked>
-            <span class="field-radio__text">Pink для iOS</span>
+      <section class="form__fields  fields-text">
+        <fieldset class="fields-text__items">
+          <legend class="fields-text__title">Контактная информация</legend>
+          <label class="fields-text__item">
+            <span class="fields-text__title">Номер телефона:</span>
+            <input class="fields-text__input" type="tel" name="tel" placeholder="Номер, пожалуйста">
+            <span class="fields-text__icon  fields-text__icon--phone"></span>
           </label>
-          <label class="field-radio__item">
-            <input class="field-radio__input" type="radio" name="radio" value="2">
-            <span class="field-radio__text">Pink на Android</span>
+          <label class="fields-text__item">
+            <span class="fields-text__title">Адресок почты:</span>
+            <input class="fields-text__input" type="email" name="email" placeholder="Введите почту*" required>
+            <span class="fields-text__icon  fields-text__icon--email"></span>
           </label>
-          <label class="field-radio__item">
-            <input class="field-radio__input" type="radio" name="radio"  value="3">
-            <span class="field-radio__text">Windows Phone</span>
-          </label>
-        </div>
+        </fieldset>
       </section>
 
-      <div class="form__field  field-text">
-        <label class="field-text__label"  for="review">Опишите свои эмоции:</label>
-        <textarea class="field-text__textarea" id="review" name="review-field" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-      </div>
+      <section class="form__fields  fields-radio">
+        <fieldset class="fields-radio__items">
+          <legend class="fields-radio__title">С каким приложением путешествовали?</legend>
+          <label class="fields-radio__item">
+            <input class="fields-radio__input" type="radio" name="radio" value="1" checked>
+            <span class="fields-radio__text">Pink для iOS</span>
+          </label>
+          <label class="fields-radio__item">
+            <input class="fields-radio__input" type="radio" name="radio" value="2">
+            <span class="fields-radio__text">Pink на Android</span>
+          </label>
+          <label class="fields-radio__item">
+            <input class="fields-radio__input" type="radio" name="radio"  value="3">
+            <span class="fields-radio__text">Windows Phone</span>
+          </label>
+        </fieldset>
+      </section>
 
-      <div class="form__field  field-action">
-        <input class="field-action__btn  btn" type="submit" value="Отправить форму">
+      <section class="form__fields  fields-text">
+        <label class="fields-text__label"  for="review">Опишите свои эмоции:</label>
+        <textarea class="fields-text__titlearea" id="review" name="review-field" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      </section>
+
+      <section class="form__fields  field-action">
+        <button class="field-action__btn  btn" type="submit">Отправить форму</button>
         <div class="field-action__item">
           <span class="field-action__text">* - обязательные поля</span>
         </div>
-      </div>
+      </section>
       </div>
     </form>
 
@@ -137,7 +138,7 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
           <a class="page-footer__logo-link" href="#">
-            <img class="page-footer__logo-link" src="http://placehold.it/65x45" alt="Лого">PINK
+            <img class="page-footer__logo-image" src="http://placehold.it/65x45" alt="Лого">PINK
           </a>
         </div>
 
@@ -156,7 +157,7 @@
         <div class="page-footer__copyright">
           <p class="page-footer__copyright-text">Разработано</p>
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="page-footer__copyright-img" src="http://placehold.it/30x35" alt="Лого Академии">
+            <img class="page-footer__copyright-image" src="http://placehold.it/30x35" alt="Лого Академии">
           </a>
         </div>
       </div>
