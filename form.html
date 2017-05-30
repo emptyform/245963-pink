@@ -37,7 +37,7 @@
       <p class="slogan__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
     </div>
 
-    <form class="form"  action="https://echo.htmlacademy.ru/">
+    <form class="form" method="post" action="https://echo.htmlacademy.ru/">
       <div class="form__wrapper">
         <section class="form__fields  fields-text">
         <fieldset class="fields-text__items">
@@ -60,27 +60,27 @@
         <fieldset class="fields-checkbox__items">
           <legend class="fields-checkbox__title">Ваши безбашенные достижения в путешествии</legend>
           <label class="fields-checkbox__item">
-            <input class="fields-checkbox__input" type="checkbox" name="Selfie with shark" checked>
+            <input class="fields-checkbox__input" type="checkbox" name="achievements" value="Selfie with shark" checked>
             <span class="fields-checkbox__text">Сделал селфи с акулой</span>
           </label>
           <label class="fields-checkbox__item">
-            <input class="fields-checkbox__input" type="checkbox" name="beach" checked>
+            <input class="fields-checkbox__input" type="checkbox" name="achievements" value="beach" checked>
             <span class="fields-checkbox__text">Обгорел на пляже</span>
           </label>
           <label class="fields-checkbox__item">
-            <input class="fields-checkbox__input" type="checkbox" name="Chuck Norris">
+            <input class="fields-checkbox__input" type="checkbox" name="achievements" value="Chuck Norris">
             <span class="fields-checkbox__text">Видел Чака Норриса</span>
           </label>
           <label class="fields-checkbox__item">
-            <input class="fields-checkbox__input" type="checkbox" name="Souvenirs">
+            <input class="fields-checkbox__input" type="checkbox" name="achievements" value="Souvenirs">
             <span class="fields-checkbox__text">Накупил сувениров</span>
           </label>
           <label class="fields-checkbox__item">
-            <input class="fields-checkbox__input" type="checkbox" name="tower" checked>
+            <input class="fields-checkbox__input" type="checkbox" name="achievements" value="tower" checked>
             <span class="fields-checkbox__text">Удержал башню</span>
           </label>
           <label class="fields-checkbox__item">
-            <input class="fields-checkbox__input" type="checkbox" name="hotel">
+            <input class="fields-checkbox__input" type="checkbox" name="achievements" value="hotel">
             <span class="fields-checkbox__text">Разгромил отель</span>
           </label>
         </fieldset>
@@ -106,15 +106,15 @@
         <fieldset class="fields-radio__items">
           <legend class="fields-radio__title">С каким приложением путешествовали?</legend>
           <label class="fields-radio__item">
-            <input class="fields-radio__input" type="radio" name="radio" value="iOS" checked>
+            <input class="fields-radio__input" type="radio" name="app" value="iOS" checked>
             <span class="fields-radio__text">Pink для iOS</span>
           </label>
           <label class="fields-radio__item">
-            <input class="fields-radio__input" type="radio" name="radio" value="Android">
+            <input class="fields-radio__input" type="radio" name="app" value="Android">
             <span class="fields-radio__text">Pink на Android</span>
           </label>
           <label class="fields-radio__item">
-            <input class="fields-radio__input" type="radio" name="radio"  value="Windows Phone">
+            <input class="fields-radio__input" type="radio" name="app"  value="Windows Phone">
             <span class="fields-radio__text">Windows Phone</span>
           </label>
         </fieldset>
@@ -122,7 +122,7 @@
 
       <section class="form__fields  fields-text">
         <label class="fields-text__label"  for="review">Опишите свои эмоции:</label>
-        <textarea class="fields-text__titlearea" id="review" name="review-field" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        <textarea class="fields-text__titlearea" id="review" name="review" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </section>
 
       <section class="form__fields  field-action">
