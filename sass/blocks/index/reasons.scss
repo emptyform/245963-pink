@@ -1,0 +1,50 @@
+.reasons {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 320px;
+  background-color: $color-1-4;
+  font-family: $font-family__text;
+}
+
+.reasons__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 5px 20px 0;
+  box-sizing: border-box;
+}
+
+.reasons__items {
+  display: block;
+  width: 280px;
+  margin: 0px;
+  padding: 0px;
+  list-style: none; /* Маркеры исчезают*/
+  box-sizing: border-box;
+}
+
+/*
+@media @tablet-widths {
+  .reasons {
+    width: 768px;
+  }
+
+  .reasons__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 768px;
+  }
+}
+
+
+@media @desktop-widths {
+  .reasons {
+    width: 100%;
+  }
+
+  .reasons__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+*/

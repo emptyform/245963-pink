@@ -1,0 +1,30 @@
+
+@import 'variables';
+@import 'mixins';
+@import 'base';
+@import 'btn';
+
+@import './blocks/page-header';
+@import './blocks/page-title-wrapper';
+@import './blocks/page-footer';
+@import './blocks/slogan';
+
+@import './global/fonts';
+
+@import './blocks/index/downloads';
+@import './blocks/index/reasons';
+@import './blocks/index/reason';
+@import './blocks/index/reviews';
+@import './blocks/index/slider';
+@import './blocks/index/prices';
+@import './blocks/index/contacts';
+
+@import './blocks/photo/posts';
+@import './blocks/photo/post';
+@import './blocks/photo/upload';
+
+@import './blocks/form/form';
+@import './blocks/form/fields-text';
+@import './blocks/form/fields-checkbox';
+@import './blocks/form/fields-radio';
+@import './blocks/form/field-action';

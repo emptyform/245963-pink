@@ -1,0 +1,42 @@
+/*.form {
+  display: ;
+  margin: 0 auto;
+  width: 280px;
+  background-color: @color-2;
+  font-family: @font-family__text;
+}
+
+.form__wrapper {
+  display: flex;
+
+}
+
+
+@media @tablet-widths {
+  .form {
+    width: 768px;
+  }
+
+  .form__wrapper {
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 768px;
+  }
+}
+
+
+@media @desktop-widths {
+  .form {
+    width: 100%;
+    background-color: @color-1;
+  }
+
+  .form__wrapper {
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    .container();
+    background-color: @color-2;
+  }
+}
+*/

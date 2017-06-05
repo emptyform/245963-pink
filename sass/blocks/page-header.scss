@@ -1,0 +1,113 @@
+.page-header {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 320px;
+  font-family: $font-family__text;
+  background-color: $color-1;
+}
+
+.page-header__title-hidden {
+  display: none;
+}
+
+.page-header__items {
+  display: block;
+  width: 320px;
+  margin: 0px;
+  padding: 0px;
+  list-style: none; /* Маркеры исчезают*/
+}
+
+.page-header__item {
+  width: 320px;
+  margin: 0 auto;
+  padding: 18px 20px;
+  box-sizing: border-box;
+  border-bottom: 1px solid $color-3;
+  border-top: 2px solid $color-1-2;
+  color: $color-2;
+
+  &:first-child {
+    border-top: none;
+  }
+
+  &--logo {
+    display: inline-block;
+    padding: 17px 20px;
+  }
+}
+
+/*.page-header__item--logo::after {
+  content: "";
+  display: table;
+  clear: both;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 270px;
+  top: 20px;
+  background: url("../img/icon-menu-cross.svg") no-repeat;*/
+
+.page-header__btn-close {
+  position: absolute;
+  margin-left: 170px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.page-header__image-btn-close {
+
+  &:active {
+    fill: $color-4-1;
+  }
+
+  &:hover {
+    fill: $color-4;
+  }
+}
+
+.page-header__link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: $font-size__title;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $color-2;
+
+  &:active {
+    color: $color-4-1;
+  }
+
+  &:hover {
+    color: $color-4;
+  }
+}
+
+/*
+@media (min-width: 768px) {
+  .page-header {
+    width: 100%;
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    margin: 0 auto;
+    width: 640px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-header {
+    width: 100%;
+  }
+
+  .page-header__wrapper {
+    margin: 0 auto;
+    width: 960px;
+  }
+}
+*/

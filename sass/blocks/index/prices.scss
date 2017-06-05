@@ -1,0 +1,46 @@
+.prices {
+  display: table;
+  position: relative;
+  width: 320px;
+  padding: 70px 0 100px;
+  margin: 0 auto;
+  background-color: $color-1-4;
+  font-family: $font-family__text;
+}
+
+.prices__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.prices__head {
+  background-color: $color-1;
+  color: $color-2;
+  font-size: $font-size__title;
+  font-weight: 700;
+}
+
+.prices__head span {
+  display: table-cell;
+  font-weight: 100;
+  font-size: $font-size__title--big;
+}
+
+.prices__name,
+ .prices__included,
+ .prices__excluded {
+   display: table-cell;
+   background-color: $color-2;
+   font-size: $font-size__text;
+}
+
+.prices__name {
+  color: $color-gray-font;
+}
+
+.prices__included svg,
+.prices__excluded svg {
+   width: 21.7px;
+   height: 16px;
+}
