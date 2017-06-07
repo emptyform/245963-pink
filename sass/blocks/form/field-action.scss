@@ -1,0 +1,52 @@
+.field-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+}
+
+.field-action__btn {
+  width: 280px;
+  padding: 21px 10px;
+  border-radius: 2px;
+  background-color: #2aab6d;
+  color: $color-white;
+  text-transform: uppercase;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.field-action__text {
+  margin: 40px 0 10px;
+  text-transform: uppercase;
+}
+
+.field-action__index {
+  color: $color-4;
+}
+
+/*
+@media (min-width: 768px) {
+  .field-action {
+    justify-content: space-between;
+    width: 648px;
+  }
+
+  .field-action__btn {
+    width: 325px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .field-action {
+    justify-content: space-between;
+    width: 960px;
+  }
+
+  .field-action__btn {
+    width: 480px;
+  }
+}
+*/

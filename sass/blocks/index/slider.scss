@@ -1,0 +1,12 @@
+.slider {
+  width: 320px;
+  box-sizing: border-box;
+}
+
+.slider__item {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}

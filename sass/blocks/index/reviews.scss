@@ -1,0 +1,36 @@
+.reviews {
+  margin: 0 auto;
+  width: 320px;
+}
+
+.reviews__wrapper {
+  margin: 0;
+  padding: 20px 20px 30px;
+  box-sizing: border-box;
+}
+
+.reviews__item {
+  display: block;
+  margin: 0;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.reviews__author‐name {
+  margin: 0px 0px 10px;
+  padding: 0px 20px;
+  font-size: $font-size__title;
+  color: $color-gray-font;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.reviews__author-desc {
+  display: none;
+}
+
+.reviews__text {
+  margin: 15px 0;
+  color: $color-gray-font;
+  line-height: 26px;
+}

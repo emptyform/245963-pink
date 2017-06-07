@@ -1,0 +1,31 @@
+.page-title-wrapper {
+  width: 320px;
+  height: 171px;
+  margin: 0 auto;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: 50% 25%;
+}
+
+.page-title {
+  padding: 30px 45px;
+  margin: 0;
+  text-align: center;
+  font-size: $font-size__title--big;
+  color: $color-white;
+  font-weight: 100;
+  line-height: 28px; /* ? */
+}
+
+/*
+@media @desktop-widths {
+  .page-title-wrapper {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-title-wrapper {
+    width: 1280px;
+  }
+}
+*/

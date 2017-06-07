@@ -1,0 +1,13 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin reset {  /* сброс стилей для ul*/
+  margin: 0px;
+  padding: 0px;
+  list-style: none; /* Маркеры исчезают*/
+}
