@@ -30,7 +30,7 @@
   width: 48px;
   height: 48px;
   padding: 14px;
-  border: 2px solid $color-1-2;
+  border: 2px solid $color-light-gray;
   border-radius: 50%;
   box-sizing: border-box;
 }
@@ -42,7 +42,7 @@
 }
 
 .page-footer__copyright-text {
-  color: $color-1-2;
+  color: $color-light-gray;
 }
 
 /*
@@ -60,13 +60,11 @@
 @media (min-width: 1200px) {
   .page-footer {
     width: 100%;
-    background-color: $color-1;
   }
 
   .page-footer__wrapper {
     flex-direction: row;
     margin: 0 auto;
-    background-color: $color-2;
   }
 }
 */

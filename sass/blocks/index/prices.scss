@@ -2,7 +2,7 @@
   width: 320px;
   padding: 70px 0 100px;
   margin: 0 auto;
-  background-color: $color-1-4;
+  background-color: $color-white-gray;
 }
 
 .prices__wrapper {
@@ -11,15 +11,13 @@
 }
 
 .prices__table {
-  display: table;
-  width: 280px; /* ? */
+  width: 320px;
 }
 
 .prices__head {
   background-color: $color-background-gray;
   color: $color-white;
   font-size: $font-size__title;
-  font-weight: 700;
 }
 
 .prices__USD {
@@ -31,16 +29,18 @@
   color: $color-gray-font;
 }
 
-.prices__name, .prices__included, .prices__excluded {
-   background-color: $color-white;
+.prices__name,
+.prices__included,
+.prices__excluded {
+  background-color: $color-white;
 }
 
 .prices__option-name {
-  font-size: 0px;
+  font-size: 0;
 }
 
 .prices__option-name--active {
-    font-size: 14px;
+    font-size: $font-size__text;
 
     &::after {
       content: "";

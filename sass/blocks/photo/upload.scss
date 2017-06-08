@@ -1,7 +1,7 @@
 .upload {
   margin: 0 auto;
   width: 320px;
-  background-color: $color-1-4;
+  background-color: $color-white-gray;
 }
 
 .upload__title-container {
@@ -51,10 +51,6 @@
   align-items: center;
 }
 
-.upload__item svg {
-  cursor: pointer;
-}
-
 .upload__tool-bar {
   display: none;
 
@@ -68,8 +64,8 @@
 .upload__btn-cancel {
   width: 280px;
   padding: 10px 20px;
-  border: 2px solid $color-4;
-  color: $color-4;
+  border: 2px solid $color-red;
+  color: $color-red;
   background-color: transparent;
 }
 

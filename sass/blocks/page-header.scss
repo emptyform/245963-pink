@@ -5,10 +5,6 @@
   background-color: $color-background-gray;
 }
 
-.page-header__title-hidden {
-  display: none;
-}
-
 .page-header__items {
   width: 320px;
   @include reset; /* сброс стилей для ul*/
@@ -20,7 +16,7 @@
   padding: 18px 20px;
   box-sizing: border-box;
   border-bottom: 1px solid $color-black;
-  border-top: 2px solid $color-1-2;
+  border-top: 2px solid $color-light-gray;
   color: $color-white;
 
   &:first-child {
@@ -44,11 +40,11 @@
 .page-header__image-btn-close {
 
   &:active {
-    fill: $color-4-1;
+    fill: $color-dark-red;
   }
 
   &:hover {
-    fill: $color-4;
+    fill: $color-red;
   }
 }
 
@@ -63,11 +59,11 @@
   color: $color-white;
 
   &:active {
-    color: $color-4-1;
+    color: $color-dark-red;
   }
 
   &:hover {
-    color: $color-4;
+    color: $color-red;
   }
 }
 

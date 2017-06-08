@@ -27,7 +27,7 @@
   margin: 18px 0px 20px;
   line-height: 30px;
   text-transform: uppercase;
-  color: $color-4;
+  color: $color-red;
 }
 
 .fields-text__text {
@@ -46,7 +46,7 @@
   box-sizing: border-box;
   font-size: $font-size__title;
   line-height: 26px;
-  border: 2px solid #e5e5e5;
+  border: 2px solid $color-gray-3;
 
   &:-ms-input-placeholder {
     color: $color-black;
@@ -65,12 +65,12 @@
   }
 
   &:hover {
-    background-color: $color-4;
+    background-color: $color-red;
   }
 
   &:focus {
     background-color: transparent;
-    box-shadow: inset 0 0 0 4px $color-1-2;
+    box-shadow: inset 0 0 0 4px $color-light-gray;
   }
 }
 
@@ -106,7 +106,7 @@
   line-height: 30px;
   text-transform: uppercase;
   box-sizing: border-box;
-  color: $color-4;
+  color: $color-red;
 }
 
 .fields-text__titlearea {
@@ -121,7 +121,7 @@
   box-sizing: border-box;
   font-size: $font-size__title;
   line-height: 30px;
-  border: 2px solid #e5e5e5;
+  border: 2px solid $color-gray-3;
 
   &:-ms-input-placeholder {
     color: $color-black;

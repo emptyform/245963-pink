@@ -10,10 +10,10 @@
   width: 280px;
   padding: 21px 10px;
   border-radius: 2px;
-  background-color: #2aab6d;
-  color: $color-white;
   text-transform: uppercase;
   font-weight: 400;
+  background-color: $color-green;
+  color: $color-white;
   cursor: pointer;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .field-action__index {
-  color: $color-4;
+  color: $color-red;
 }
 
 /*

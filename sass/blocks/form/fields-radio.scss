@@ -1,7 +1,7 @@
 .fields-radio {
   width: 320px;
   margin: 0 auto;
-  background-color: $color-1-4;
+  background-color: $color-white-gray;
 }
 
   .fields-radio__items {
@@ -20,7 +20,7 @@
     line-height: 18px;
     font-weight: bold;
     text-transform: uppercase;
-    color: $color-4;
+    color: $color-red;
   }
 
   .fields-radio__item {
@@ -51,7 +51,7 @@
       left: 0;
       top: 15px;
       border-radius: 50%;
-      border: 2px solid #e5e5e5;
+      border: 2px solid $color-gray-3;
       background-color: $color-white;
       box-sizing: border-box;
     }
@@ -66,11 +66,11 @@
     top: 27px;
     left: 13px;
     border-radius: 50%;
-    background-color: $color-4;
+    background-color: $color-red;
   }
 
   .fields-radio__input:checked + .fields-radio__text:active::before {
-    background-color: $color-1-1;
+    background-color: $color-dark-gray;
   }
 
   .fields-radio__input {
