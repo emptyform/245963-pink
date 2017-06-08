@@ -1,17 +1,13 @@
 .posts {
-  display: block;
   position: relative;
   margin: 0 auto;
   width: 320px;
-  background-color: $color-2;
-  font-family: $font-family__text;
 }
 
 .posts__wrapper {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 320px;
   padding: 0 20px;
   box-sizing: border-box;
 }
@@ -33,7 +29,6 @@
 
   .posts__wrapper {
     align-items: center;
-    width: 768px;
     margin: 0 auto;
   }
 

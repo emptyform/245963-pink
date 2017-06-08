@@ -4,7 +4,7 @@
   flex-direction: column;
   width: 280px;
   box-sizing: border-box;
-  background-color: $color-1-4;
+  background-color: $color-white-gray;
 }
 
 .post__image {
@@ -29,14 +29,12 @@
 
 .post___label-block {
   position: absolute;
-  display: block;
   width: 140px;
   padding: 10px 15px;
   margin: 0;
   top: 0;
   right: 0;
-  background-color: $color-4;
-  font-family: $font-family__text;
+  background-color: $color-red;
   box-sizing: border-box;
   index: 1;
 }
@@ -46,7 +44,7 @@
   margin: 0;
   font-size: $font-size__text--small;
   font-weight: 400;
-  color: $color-2;
+  color: $color-white;
   text-transform: uppercase;
 }
 
@@ -71,25 +69,27 @@
 
 .post__author‐name {
   margin: 0;
-  font-size: $font-size__text;
   font-weight: 700;
   line-height: 24px;
   font-style: normal;
 }
 
-.post__author‐name span {
+.post__time {
   font-weight: 100;
 }
 
 .post__text {
   margin: 10px 0 15px;
-  font-size: $font-size__text;
   line-height: 24px;
   color: $color-gray-font;
 }
 
 .post__like {
+  width: 15px;
+  height: 15px;
   background-color: transparent;
+  background-image: url("../img/icon-heart.svg"); /* Change color in SVG */
+  background-repeat: no-repeat;
   border: none;
   cursor: pointer;
 }
@@ -99,7 +99,7 @@
   font-size: $font-size__text--small;
   text-transform: uppercase;
   line-height: 24px;
-  color: $color-4;
+  color: $color-red;
 }
 
 /*
@@ -138,10 +138,6 @@
     &--wide {
       width: 648px;
     }
-  }
-
-  .post__blockquote {
-    padding: 0px 0px 0px 20px;
   }
 
   .post__like-container {
@@ -195,20 +191,12 @@
     }
   }
 
-  .post__blockquote {
-    padding: 0px 0px 0px 20px;
-  }
-
   .post__like-container {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     margin: 0px 20px 0px 0px;
-  }
-
-  .post__title {
-    font-weight: normal;
   }
 }
 */

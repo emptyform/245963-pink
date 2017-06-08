@@ -1,15 +1,10 @@
 .reviews {
-  display: block;
-  position: relative;
   margin: 0 auto;
   width: 320px;
-  font-family: $font-family__text;
-  background-color: $color-2;
 }
 
 .reviews__wrapper {
-  width: 320px;
-  margin: 0 auto;
+  margin: 0;
   padding: 20px 20px 30px;
   box-sizing: border-box;
 }
@@ -36,7 +31,6 @@
 
 .reviews__text {
   margin: 15px 0;
-  font-size: $font-size__text;
   color: $color-gray-font;
   line-height: 26px;
 }

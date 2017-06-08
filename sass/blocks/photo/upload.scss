@@ -1,18 +1,12 @@
 .upload {
-  display: block;
-  position: relative;
   margin: 0 auto;
   width: 320px;
-  background-color: $color-1-4;
-  font-family: $font-family__text;
+  background-color: $color-white-gray;
 }
 
 .upload__title-container {
-  display: block;
-  position: relative;
-  width: 320px;
   padding: 45px 10px;
-  background-color: $color-2;
+  background-color: $color-white;
   box-sizing: border-box;
 }
 
@@ -45,9 +39,8 @@
   align-items: center;
   justify-content: space-around;
   align-items: flex-start;
+  @include reset; /* сброс стилей для ul*/
   padding: 35px 30px 15px;
-  margin: 0;
-  list-style: none; /* Маркеры исчезают*/
   border-bottom: 2px solid #dddfe0;
 }
 
@@ -56,10 +49,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-}
-
-.upload__item svg {
-  cursor: pointer;
 }
 
 .upload__tool-bar {
@@ -73,17 +62,10 @@
 
 .upload__btn-post,
 .upload__btn-cancel {
-  display: block;
   width: 280px;
-  margin: 0 auto;
   padding: 10px 20px;
-  border: 2px solid $color-4;
-  border-radius: 30px;
-  text-align: center;
-  text-decoration: none;
-  font-size: $font-size__title;
-  font-weight: bold;
-  color: $color-4;
+  border: 2px solid $color-red;
+  color: $color-red;
   background-color: transparent;
 }
 

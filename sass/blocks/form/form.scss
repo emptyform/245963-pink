@@ -1,18 +1,28 @@
-/*.form {
-  display: ;
+.form {
+  position: relative;
+  width: 320px;
   margin: 0 auto;
-  width: 280px;
-  background-color: @color-2;
-  font-family: @font-family__text;
+  padding: 0;
 }
 
 .form__wrapper {
+  position: relative;
   display: flex;
-
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
 }
 
+.form__fields {
+  margin-bottom: 35px;
 
-@media @tablet-widths {
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/*
+@media (min-width: 768px) {
   .form {
     width: 768px;
   }
@@ -24,19 +34,16 @@
   }
 }
 
-
-@media @desktop-widths {
+@media (min-width: 1200px) {
   .form {
     width: 100%;
-    background-color: @color-1;
+    background-color: $color-background-gray;
   }
 
   .form__wrapper {
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
-    .container();
-    background-color: @color-2;
   }
 }
 */

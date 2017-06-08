@@ -1,22 +1,13 @@
 .page-header {
-  display: block;
   position: relative;
   margin: 0 auto;
   width: 320px;
-  font-family: $font-family__text;
-  background-color: $color-1;
-}
-
-.page-header__title-hidden {
-  display: none;
+  background-color: $color-background-gray;
 }
 
 .page-header__items {
-  display: block;
   width: 320px;
-  margin: 0px;
-  padding: 0px;
-  list-style: none; /* Маркеры исчезают*/
+  @include reset; /* сброс стилей для ul*/
 }
 
 .page-header__item {
@@ -24,9 +15,9 @@
   margin: 0 auto;
   padding: 18px 20px;
   box-sizing: border-box;
-  border-bottom: 1px solid $color-3;
-  border-top: 2px solid $color-1-2;
-  color: $color-2;
+  border-bottom: 1px solid $color-black;
+  border-top: 2px solid $color-light-gray;
+  color: $color-white;
 
   &:first-child {
     border-top: none;
@@ -38,20 +29,9 @@
   }
 }
 
-/*.page-header__item--logo::after {
-  content: "";
-  display: table;
-  clear: both;
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  left: 270px;
-  top: 20px;
-  background: url("../img/icon-menu-cross.svg") no-repeat;*/
-
 .page-header__btn-close {
   position: absolute;
-  margin-left: 170px;
+  right: 20px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -60,11 +40,11 @@
 .page-header__image-btn-close {
 
   &:active {
-    fill: $color-4-1;
+    fill: $color-dark-red;
   }
 
   &:hover {
-    fill: $color-4;
+    fill: $color-red;
   }
 }
 
@@ -76,14 +56,14 @@
   line-height: 24px;
   font-weight: bold;
   text-transform: uppercase;
-  color: $color-2;
+  color: $color-white;
 
   &:active {
-    color: $color-4-1;
+    color: $color-dark-red;
   }
 
   &:hover {
-    color: $color-4;
+    color: $color-red;
   }
 }
 

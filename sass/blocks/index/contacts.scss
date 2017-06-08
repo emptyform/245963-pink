@@ -1,25 +1,16 @@
 .contacts {
-  display: block;
-  position: relative;
   margin: 0 auto;
   width: 320px;
-  font-family: $font-family__text;
-  background-color: $color-2;
 }
 
 .contacts__wrapper {
-  display: block;
-  width: 320px;
-  margin: 0 auto;
+  margin: 0;
   padding: 28px 45px;
   box-sizing: border-box;
 }
 
 .contacts__items {
-  display: block;
-  margin: 0 auto;
-  padding: 0;
-  list-style: none; /* Маркеры исчезают*/
+  @include reset; /* сброс стилей для ul*/
   box-sizing: border-box;
 }
 
@@ -45,7 +36,7 @@
 .contacts__number,
 .contacts__mail {
   font-size: $font-size__title;
-  color: $color-4;
+  color: $color-red;
   text-decoration: none;
 }
 
@@ -56,15 +47,14 @@
 .contacts__map {
   height: 200px;
   width: 320px;
-  background: #f5f2e4 url("../img/bg-map-mobile@1x.png") center top no-repeat;
+  background: url("../img/bg-map-mobile@1x.png") center top no-repeat;
   background-size: contain;
 }
 
 @media (max-width: 767px) and (min-resolution: 144dpi), (max-width:767px) and (min-resolution: 1.5dppx) {
   .contacts__map {
-    background: #f5f2e4 url("../img/bg-map-mobile@2x.png") center top no-repeat;
+    background: url("../img/bg-map-mobile@2x.png") center top no-repeat;
     background-size: contain;
-    margin-top: 42px;
   }
 }
 

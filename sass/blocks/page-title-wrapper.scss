@@ -1,6 +1,4 @@
 .page-title-wrapper {
-  display: block;
-  position: relative;
   width: 320px;
   height: 171px;
   margin: 0 auto;
@@ -10,10 +8,10 @@
 
 .page-title {
   padding: 30px 45px;
-  margin: 0 auto;
+  margin: 0;
   text-align: center;
   font-size: $font-size__title--big;
-  color: $color-2;
+  color: $color-white;
   font-weight: 100;
   line-height: 28px; /* ? */
 }
