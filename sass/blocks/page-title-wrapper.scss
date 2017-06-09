@@ -17,13 +17,13 @@
 }
 
 /*
-@media @desktop-widths {
+@media (min-width: 660px) {
   .page-title-wrapper {
     width: 768px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .page-title-wrapper {
     width: 1280px;
   }

@@ -16,9 +16,9 @@
 }
 
 /*
-@media @tablet-widths {
+@media (min-width: 660px) {
   .reasons {
-    width: 768px;
+    width: 660px;
   }
 
   .reasons__wrapper {
@@ -29,7 +29,7 @@
 }
 
 
-@media @desktop-widths {
+@media (min-width: 960px) {
   .reasons {
     width: 100%;
   }

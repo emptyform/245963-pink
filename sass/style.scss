@@ -1,6 +1,6 @@
-
 @import 'variables';
 @import 'mixins';
+@import 'fonts';
 @import 'base';
 @import 'btn';
 
@@ -8,8 +8,6 @@
 @import './blocks/page-title-wrapper';
 @import './blocks/page-footer';
 @import './blocks/slogan';
-
-@import './global/fonts';
 
 @import './blocks/index/downloads';
 @import './blocks/index/reasons';

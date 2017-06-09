@@ -6,12 +6,12 @@
 }
 
 .slogan__text {
-  padding: 20px 40px;
+  padding: 45px 50px 35px;
   margin: 0;
   text-align: center;
   font-size: $font-size__title--big;
   font-weight: 100;
-  line-height: 24px; /* ? */
+  line-height: 26px;
 
   &--small {
     padding: 50px 35px;
@@ -27,3 +27,18 @@
     line-height: 30px;
   }
 }
+
+.slogan__text-span {
+  display: block;
+  padding-top: 35px;
+}
+
+/*
+@media (min-width: 660px) {
+
+}
+
+@media (min-width: 960px) {
+
+}
+*/

@@ -38,7 +38,7 @@
 }
 
 /*
-@media @tablet-widths {
+@media (min-width: 660px) {
   .reason {
     flex-direction: column;
     width: 256px;
@@ -51,7 +51,7 @@
 }
 
 
-@media @desktop-widths {
+@media (min-width: 960px) {
   .reason {
     flex-direction: column;
     width: 400px;

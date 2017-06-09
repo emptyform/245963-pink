@@ -6,7 +6,6 @@
 }
 
 .page-header__items {
-  width: 320px;
   @include reset; /* сброс стилей для ul*/
 }
 
@@ -68,26 +67,31 @@
 }
 
 /*
-@media (min-width: 768px) {
+@media (min-width: 660px) {
   .page-header {
-    width: 100%;
+    width: 660px;
   }
 
-  .page-header__wrapper {
-    display: flex;
-    margin: 0 auto;
-    width: 640px;
+  .page-header__item {
+    width: 660px;
+    padding: 0 20px;
   }
 }
 
-@media (min-width: 1200px) {
+
+@media (min-width: 960px) {
   .page-header {
-    width: 100%;
+    width: 960px;
   }
 
-  .page-header__wrapper {
-    margin: 0 auto;
+  .page-header__items {
+    display: flex;
     width: 960px;
+  }
+
+  .page-header__item {
+    width: 960px;
+    padding: 0 10px;
   }
 }
 */

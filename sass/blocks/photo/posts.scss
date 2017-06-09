@@ -22,9 +22,9 @@
 
 
 /*
-@media (min-width: 768px) {
+@media (min-width: 660px) {
   .posts {
-    width: 768px;
+    width: 660px;
   }
 
   .posts__wrapper {
@@ -48,7 +48,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .posts {
     width: 100%;
   }
@@ -61,7 +61,7 @@
     border-top: none;
 
     &:first-child {
-      width: 1200px;
+      width: 960px;
     }
 
     &:last-child {

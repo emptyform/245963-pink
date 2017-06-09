@@ -103,7 +103,7 @@
 }
 
 /*
-@media (min-width: 768px) {
+@media (min-width: 660px) {
   .post {
     justify-content: flex-start;
     width: 324px;
@@ -150,7 +150,7 @@
 }
 
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .post {
     justify-content: flex-start;
     width: 400px;
@@ -159,7 +159,7 @@
     border-top: none;
 
     &:first-child {
-      width: 1200px;
+      width: 960px;
     }
 
     &:last-child {
@@ -172,7 +172,7 @@
     height: 267px;
 
     &--big {
-      width: 1200px;
+      width: 960px;
       height: 400px;
     }
   }
@@ -187,7 +187,7 @@
     background-color: rgba(0, 0, 0, 0.35);
 
     &--wide {
-      width: 1200px;
+      width: 960px;
     }
   }
 
