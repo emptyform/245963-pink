@@ -1,0 +1,44 @@
+.slogan {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  color: $color-gray-font;
+}
+
+.slogan__text {
+  padding: 45px 50px 35px;
+  margin: 0;
+  text-align: center;
+  font-size: $font-size__title--big;
+  font-weight: 100;
+  line-height: 26px;
+
+  &--small {
+    padding: 50px 35px;
+    font-size: $font-size__text;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  &--wide {
+    padding: 50px 20px 35px;
+    font-size: $font-size__text;
+    font-weight: 400;
+    line-height: 30px;
+  }
+}
+
+.slogan__text-span {
+  display: block;
+  padding-top: 35px;
+}
+
+/*
+@media (min-width: 660px) {
+
+}
+
+@media (min-width: 960px) {
+
+}
+*/

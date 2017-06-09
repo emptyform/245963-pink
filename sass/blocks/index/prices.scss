@@ -1,0 +1,66 @@
+.prices {
+  width: 320px;
+  padding: 70px 0 100px;
+  margin: 0 auto;
+  background-color: $color-white-gray;
+}
+
+.prices__wrapper {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.prices__table {
+  width: 320px;
+}
+
+.prices__head {
+  background-color: $color-background-gray;
+  color: $color-white;
+  font-size: $font-size__title;
+}
+
+.prices__USD {
+  font-weight: 100;
+  font-size: $font-size__title--big;
+}
+
+.prices__name {
+  color: $color-gray-font;
+}
+
+.prices__name,
+.prices__included,
+.prices__excluded {
+  background-color: $color-white;
+}
+
+.prices__option-name {
+  font-size: 0;
+}
+
+.prices__option-name--active {
+    font-size: $font-size__text;
+
+    &::after {
+      content: "";
+      display: table;
+      width: 21.7px;
+      height: 16px;
+      background-color: transparent;
+      background-image: url("../img/icon-yes.svg"); /* Change color in SVG */
+      background-repeat: no-repeat;
+      border: none;
+      cursor: pointer;
+    }
+}
+
+/*
+@media (min-width: 660px) {
+
+}
+
+@media (min-width: 960px) {
+
+}
+*/

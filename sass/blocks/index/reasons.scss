@@ -1,0 +1,42 @@
+.reasons {
+  margin: 0 auto;
+  width: 320px;
+}
+
+.reasons__wrapper {
+  margin: 0;
+  padding: 5px 20px 0;
+  box-sizing: border-box;
+}
+
+.reasons__items {
+  width: 280px;
+  @include reset; /* сброс стилей для ul*/
+  box-sizing: border-box;
+}
+
+/*
+@media (min-width: 660px) {
+  .reasons {
+    width: 660px;
+  }
+
+  .reasons__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 768px;
+  }
+}
+
+
+@media (min-width: 960px) {
+  .reasons {
+    width: 100%;
+  }
+
+  .reasons__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+*/

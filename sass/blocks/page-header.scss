@@ -1,0 +1,97 @@
+.page-header {
+  position: relative;
+  margin: 0 auto;
+  width: 320px;
+  background-color: $color-background-gray;
+}
+
+.page-header__items {
+  @include reset; /* сброс стилей для ul*/
+}
+
+.page-header__item {
+  width: 320px;
+  margin: 0 auto;
+  padding: 18px 20px;
+  box-sizing: border-box;
+  border-bottom: 1px solid $color-black;
+  border-top: 2px solid $color-light-gray;
+  color: $color-white;
+
+  &:first-child {
+    border-top: none;
+  }
+
+  &--logo {
+    display: inline-block;
+    padding: 17px 20px;
+  }
+}
+
+.page-header__btn-close {
+  position: absolute;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.page-header__image-btn-close {
+
+  &:active {
+    fill: $color-dark-red;
+  }
+
+  &:hover {
+    fill: $color-red;
+  }
+}
+
+.page-header__link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: $font-size__title;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $color-white;
+
+  &:active {
+    color: $color-dark-red;
+  }
+
+  &:hover {
+    color: $color-red;
+  }
+}
+
+/*
+@media (min-width: 660px) {
+  .page-header {
+    width: 660px;
+  }
+
+  .page-header__item {
+    width: 660px;
+    padding: 0 20px;
+  }
+}
+
+
+@media (min-width: 960px) {
+  .page-header {
+    width: 960px;
+  }
+
+  .page-header__items {
+    display: flex;
+    width: 960px;
+  }
+
+  .page-header__item {
+    width: 960px;
+    padding: 0 10px;
+  }
+}
+*/
