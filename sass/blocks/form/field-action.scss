@@ -8,17 +8,19 @@
 
 .field-action__btn {
   width: 280px;
-  padding: 21px 10px;
+  padding: 17px 10px;
   border-radius: 2px;
   text-transform: uppercase;
-  font-weight: 400;
+  font-size: $font-size__title;
+  line-height: 30px;
+  font-weight: 700;
   background-color: $color-green;
   color: $color-white;
   cursor: pointer;
 }
 
 .field-action__text {
-  margin: 40px 0 10px;
+  margin: 40px 0 20px;
   text-transform: uppercase;
 }
 

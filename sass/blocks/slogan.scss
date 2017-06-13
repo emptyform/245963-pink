@@ -1,27 +1,26 @@
 .slogan {
-  position: relative;
   width: 320px;
   margin: 0 auto;
   color: $color-gray-font;
 }
 
 .slogan__text {
-  padding: 45px 50px 35px;
+  padding: 41px 50px 35px;
   margin: 0;
   text-align: center;
   font-size: $font-size__title--big;
   font-weight: 100;
-  line-height: 26px;
+  line-height: 28px;
 
   &--small {
-    padding: 50px 35px;
+    padding: 44px 35px 49px;
     font-size: $font-size__text;
     font-weight: 400;
     line-height: 30px;
   }
 
   &--wide {
-    padding: 50px 20px 35px;
+    padding: 44px 20px 18px;
     font-size: $font-size__text;
     font-weight: 400;
     line-height: 30px;
@@ -30,15 +29,40 @@
 
 .slogan__text-span {
   display: block;
-  padding-top: 35px;
+  padding-top: 30px;
 }
 
-/*
+
 @media (min-width: 660px) {
+  .slogan {
+    width: 660px;
+  }
 
+  .slogan__text {
+    padding: 49px 30px 35px;
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  .slogan__text-span {
+    padding-top: 0;
+    padding: 0 10px;
+  }
 }
+
 
 @media (min-width: 960px) {
+  .slogan {
+    width: 960px;
+  }
 
+  .slogan__text {
+    padding: 65px 60px 35px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .slogan__text-span {
+    padding: 0 190px;
+  }
 }
-*/

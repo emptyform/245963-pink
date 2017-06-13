@@ -9,16 +9,17 @@
     flex-direction: column;
     align-items: center;
     width: 320px;
-    margin: 35px 0px 20px;
+    margin: 38px 0px 27px;
     padding: 0 20px;
     border-width: 0;
     box-sizing: border-box;
   }
 
   .fields-radio__title {
+    margin: 0 20px 15px;
     text-align: center;
     line-height: 18px;
-    font-weight: bold;
+    font-weight: 400;
     text-transform: uppercase;
     color: $color-red;
   }
@@ -26,7 +27,7 @@
   .fields-radio__item {
     display: flex;
     width: 280px;
-    margin: 7px 0px 8px;
+    margin: 5px 0px 0;
     box-sizing: border-box;
 
     &:last-child {

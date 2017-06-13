@@ -5,7 +5,7 @@
 
 .reviews__wrapper {
   margin: 0;
-  padding: 20px 20px 30px;
+  padding: 5px 20px 92px;
   box-sizing: border-box;
 }
 
@@ -14,6 +14,10 @@
   margin: 0;
   margin-top: 25px;
   text-align: center;
+
+  &:first-child {
+    margin-top: 0;
+  }
 }
 
 .reviews__author‐name {
@@ -22,7 +26,8 @@
   font-size: $font-size__title;
   color: $color-gray-font;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .reviews__author-desc {
@@ -30,17 +35,71 @@
 }
 
 .reviews__text {
-  margin: 15px 0;
+  margin: 16px 0;
   color: $color-gray-font;
-  line-height: 26px;
+  line-height: 30px;
 }
 
-/*
+
 @media (min-width: 660px) {
+  .reviews {
+    width: 660px;
+  }
 
+  .reviews__wrapper {
+    padding: 72px 10px 67px;
+  }
+
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:first-child {
+      display: flex;
+    }
+  }
+
+  .reviews__author‐name {
+    margin: 20px 0 0;
+    font-size: 20px;
+    line-height: 30px;
+    order: 2;
+  }
+
+  .reviews__author-desc {
+    display: block;
+    margin: 0;
+    line-height: 30px;
+    order: 3;
+  }
+
+  .reviews__text {
+    font-size: $font-size__title;
+    order: 1;
+  }
 }
+
 
 @media (min-width: 960px) {
+  .reviews {
+    width: 990px;
+  }
 
+  .reviews__wrapper {
+    padding: 132px 120px 40px;
+  }
+
+  .reviews__author‐name {
+    margin: 20px 0 0;
+    font-size: $font-size__title--big;
+  }
+
+  .reviews__author-desc {
+    font-size: $font-size__title;
+  }
+
+  .reviews__quote {
+    display: none;
+  }
 }
-*/

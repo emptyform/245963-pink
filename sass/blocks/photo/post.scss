@@ -30,7 +30,7 @@
 .post___label-block {
   position: absolute;
   width: 140px;
-  padding: 10px 15px;
+  padding: 6px 15px;
   margin: 0;
   top: 0;
   right: 0;
@@ -43,7 +43,8 @@
   text-align: center;
   margin: 0;
   font-size: $font-size__text--small;
-  font-weight: 400;
+  font-weight: 700;
+  line-height: 24px;
   color: $color-white;
   text-transform: uppercase;
 }
@@ -53,7 +54,7 @@
   flex-direction: column;
   flex-grow: 1;
   width: 280px;
-  padding: 20px 15px;
+  padding: 17.5px 13px 18px 17px;
   box-sizing: border-box;
 }
 
@@ -79,15 +80,17 @@
 }
 
 .post__text {
-  margin: 10px 0 15px;
+  margin: 0 0 11px;
   line-height: 24px;
   color: $color-gray-font;
 }
 
 .post__like {
-  width: 15px;
-  height: 15px;
+  width: 14px;
+  height: 14px;
+  padding-top: 0;
   background-color: transparent;
+  background-position: center;
   background-image: url("../img/icon-heart.svg"); /* Change color in SVG */
   background-repeat: no-repeat;
   border: none;

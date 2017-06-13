@@ -1,38 +1,33 @@
 .downloads {
+  position: relative;
   margin: 0 auto;
   width: 320px;
   background-color: $color-gray-2;
 }
 
 .downloads__wrapper-image {
+  position: relative;
   height: 396px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: 50% 100%;
 }
 
 .downloads__image {
-  width: 258px; /* ? */
-  height: 286px; /* ? */
-  margin-top: 110px;
+  width: 258px;
+  height: 285px;
+  margin-top: 109px;
 }
 
 .downloads__content {
   margin: 0 auto;
   width: 280px;
-  padding: 25px 20px 30px;
-}
-
-.downloads__btn-block {
-  width: 260px;
-  margin: 0 auto;
-  padding: 8px 10px;
-
+  padding: 27px 20px 30px;
 }
 
 .downloads__btn {
-  width: 260px;
-  padding: 8px 10px;
-  border: 2px solid $color-white;
+  width: 255px;
+  padding: 11px 10px 14px;
+  border: 3px solid $color-white;
   color: $color-white;
 }
 
@@ -41,7 +36,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
-  margin: 15px 35px;
+  margin: 31px 38px 19px;
 }
 
 .downloads__text {
@@ -52,15 +47,119 @@
   text-align: center;
   color: $color-white;
   font-weight: 100;
-  line-height: 20px;
+  line-height: 24px;
 }
 
-/*
+
 @media (min-width: 660px) {
+  .downloads {
+    width: 660px;
+  }
 
+  .downloads__wrapper-image {
+    height: 620px;
+    width: 700px;
+    margin-left: -20px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &::after {
+      content:"Взгляните на жизнь иначе!";
+      position: absolute;
+      width: 210px;
+      height: 150px;
+      left: 83px;
+      top: 94px;
+      text-align: center;
+      font-size: 40px;
+      line-height: 47px;
+      font-weight: 100;
+      color: $color-white;
+      box-sizing: border-box;
+    }
+  }
+
+  .downloads__image {
+    width: 470px;
+    height: 553px;
+    margin-top: 67px;
+    margin-left: 180px;
+
+  }
+
+  .downloads__content {
+    position: absolute;
+    top: 268px;
+    left: 10px;
+    width: 300px;
+    padding: 0 13px 0;
+  }
+
+  .downloads__btn {
+    width: 300px;
+    box-sizing: border-box;
+  }
+
+  .downloads__apps {
+    margin: 45px 52px 33px 45px;
+  }
+
+  .downloads__text {
+    font-size: $font-size__title;
+    padding: 0;
+    margin: 0;
+  }
 }
+
 
 @media (min-width: 960px) {
+  .downloads {
+    width: 960px;
+  }
 
+  .downloads__wrapper-image {
+    height: 745px;
+    width: 1200px;
+    margin-left: -120px;
+
+    &::after {
+      width: 250px;
+      height: 180px;
+      left: 155px;
+      top: 110px;
+      font-size: 50px;
+      line-height: 60px;
+    }
+  }
+
+  .downloads__image {
+    width: 555px;
+    height: 645px;
+    margin-top: 100px;
+    margin-left: 480px;
+  }
+
+  .downloads__content {
+    position: absolute;
+    top: 340px;
+    padding: 0;
+  }
+
+  .downloads__btn {
+    line-height: 18px;
+    font-weight: 700;
+    padding: 15px 12px 16px;
+    font-size: $font-size__title--more;
+  }
+
+  .downloads__apps {
+    margin: 68px 48px 50px 47px;
+  }
+
+  .downloads__text {
+    font-size: $font-size__title;
+    padding: 0;
+    margin: 0;
+  }
 }
-*/
