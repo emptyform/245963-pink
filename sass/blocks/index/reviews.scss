@@ -1,6 +1,6 @@
 .reviews {
-  margin: 0 auto;
   width: 320px;
+  margin: 0 auto;
 }
 
 .reviews__wrapper {
@@ -24,10 +24,10 @@
   margin: 0px 0px 10px;
   padding: 0px 20px;
   font-size: $font-size__title;
-  color: $color-gray-font;
-  line-height: 26px;
   font-weight: 700;
   font-style: normal;
+  line-height: 26px;
+  color: $color-gray-font;
 }
 
 .reviews__author-desc {
@@ -36,8 +36,17 @@
 
 .reviews__text {
   margin: 16px 0;
-  color: $color-gray-font;
   line-height: 30px;
+  color: $color-gray-font;
+  quotes: "«" "»"; /* Устанавливаем вид кавычек */
+
+  &:before {
+    content: open-quote; /* Добавляем перед текстом открывающую кавычку */
+  }
+
+  &:after {
+    content: close-quote; /* Добавляем после текста закрывающую кавычку */
+   }
 }
 
 
@@ -83,7 +92,7 @@
 
 @media (min-width: 960px) {
   .reviews {
-    width: 990px;
+    width: 960px;
   }
 
   .reviews__wrapper {
@@ -97,9 +106,5 @@
 
   .reviews__author-desc {
     font-size: $font-size__title;
-  }
-
-  .reviews__quote {
-    display: none;
   }
 }

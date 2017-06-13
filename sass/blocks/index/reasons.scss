@@ -6,7 +6,7 @@
 .reasons__items {
   position: relative;
   width: 280px;
-  @include reset; /* сброс стилей для ul*/
+  @include reset-ul-style;
   padding: 62px 20px 0;
   box-sizing: border-box;
 }

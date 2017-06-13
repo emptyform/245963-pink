@@ -6,7 +6,7 @@
 }
 
 .page-header__items {
-  @include reset; /* сброс стилей для ul*/
+  @include reset-ul-style;
 }
 
 .page-header__item {
