@@ -42,6 +42,18 @@
     padding: 49px 30px 35px;
     font-size: 40px;
     line-height: 47px;
+
+      &--small {
+        padding: 93px 50px 75px;
+        font-size: $font-size__title;
+        line-height: 30px;
+      }
+
+      &--wide {
+        padding: 93px 50px 19px;
+        font-size: $font-size__title;
+        line-height: 30px;
+      }
   }
 
   .slogan__text-span {
@@ -60,9 +72,26 @@
     padding: 65px 60px 35px;
     font-size: 50px;
     line-height: 60px;
+
+    &--small {
+      padding: 93px 190px 87px;
+      font-size: $font-size__title;
+      line-height: 30px;
+    }
+
+    &--wide {
+      padding: 93px 100px 32px;
+      font-size: $font-size__title;
+      line-height: 30px;
+    }
   }
 
   .slogan__text-span {
     padding: 0 190px;
+
+    &--wide {
+      display: inline;
+      padding: 0;
+    }
   }
 }

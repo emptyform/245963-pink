@@ -58,15 +58,14 @@
 }
 
 .contacts__map {
-  margin-left: -20px;
   background: $color-white-gray url("../img/bg-map-mobile@1x.png") center top no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 @media (max-width: 767px) and (min-resolution: 144dpi), (max-width:767px) and (min-resolution: 1.5dppx) {
   .contacts__map {
     background: $color-white-gray url("../img/bg-map-mobile@1x.png") center top no-repeat;
-    background-size: contain;
+    background-size: cover;
   }
 }
 
