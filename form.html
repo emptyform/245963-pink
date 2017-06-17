@@ -5,7 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link href="css/style.css" rel="stylesheet">
     <title>Конкурс</title>
+
+    <!-- Pixel Glass -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url("img/layouts/pink-form-mobile.jpg");
+      }
+      /* Планшет */
+      @media ( min-width: 660px ) {
+        HTML {
+      /* Планшетный макет */
+        background-image: url("img/layouts/pink-form-tablet.jpg");
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 960px ) {
+        HTML {
+      /* Десктопный макет */
+        background-image: url("img/layouts/pink-form-desktop.jpg");
+        }
+      }
+    </style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
   </head>
+
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
@@ -14,7 +42,7 @@
             <a class="page-header__logo-link" href="index.html">
               <img class="page-header_logo-image" src="img/logo-pink-white-mobile.svg" alt="Лого">
             </a>
-            <button class="page-header__btn-close" type="button">
+            <button class="page-header__btn-close" type="button" aria-label="Закрыть меню">
               <svg class="page-header__image-btn-close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
                 <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
               </svg>
@@ -39,26 +67,30 @@
       </div>
     </header>
 
-    <div class="page-title-wrapper">
-      <h1 class="page-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    <div class="page-title">
+      <div class="page-title__wrapper">
+        <h1 class="page-title__text  page-title__text--wide">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
     </div>
 
     <div class="slogan">
-      <p class="slogan__text  slogan__text--wide">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+      <p class="slogan__text  slogan__text--wide">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        <span class="slogan__text-span  slogan__text-span--wide">Пожалуйста, заполните форму ниже:</span>
+      </p>
     </div>
 
     <form class="form" method="post" action="https://echo.htmlacademy.ru/">
       <div class="form__wrapper">
 
-        <section class="form__fields  fields-text">
+      <section class="form__fields  fields-text">
         <fieldset class="fields-text__items">
           <label class="fields-text__item">
             <span class="fields-text__title">Фамилия:</span>
-            <input class="fields-text__input" type="text" name="surname" placeholder="Укажите фамилию*" required>
+            <input class="fields-text__input" type="text" name="surname" placeholder="Укажите фамилию *" required>
           </label>
           <label class="fields-text__item">
             <span class="fields-text__title">Имя:</span>
-            <input class="fields-text__input" type="text" name="name" placeholder="Введите ваше имя*" required>
+            <input class="fields-text__input" type="text" name="name" placeholder="Введите ваше имя *" required>
           </label>
           <label class="fields-text__item">
             <span class="fields-text__title">Отчество:</span>
@@ -69,11 +101,13 @@
 
       <section class="form__fields  fields-checkbox">
         <fieldset class="fields-checkbox__items">
-          <legend class="fields-checkbox__title">Ваши безбашенные достижения в путешествии</legend>
+          <legend class="fields-checkbox__legend">Ваши безбашенные достижения в путешествии</legend>
+
           <label class="fields-checkbox__item">
             <input class="fields-checkbox__input" type="checkbox" name="achievements" value="Selfie with shark" checked>
             <span class="fields-checkbox__text">Сделал селфи с акулой</span>
           </label>
+
           <label class="fields-checkbox__item">
             <input class="fields-checkbox__input" type="checkbox" name="achievements" value="beach" checked>
             <span class="fields-checkbox__text">Обгорел на пляже</span>
@@ -98,16 +132,18 @@
       </section>
 
       <section class="form__fields  fields-text">
-        <fieldset class="fields-text__items">
-          <legend class="fields-text__title">Контактная информация</legend>
-          <label class="fields-text__item">
-            <span class="fields-text__title">Номер телефона:</span>
-            <input class="fields-text__input" type="tel" name="tel" placeholder="Номер, пожалуйста">
+        <fieldset class="fields-text__items  fields-text__items--contacts">
+          <legend class="fields-text__legend  fields-text__legend--hidden">Контактная информация</legend>
+
+          <label class="fields-text__item  fields-text__item--contacts">
+            <span class="fields-text__title  fields-text__title--contacts">Номер телефона:</span>
+            <input class="fields-text__input  fields-text__input--contacts" type="tel" name="tel" placeholder="Номер, пожалуйста">
             <span class="fields-text__icon  fields-text__icon--phone"></span>
           </label>
-          <label class="fields-text__item">
-            <span class="fields-text__title">Адресок почты:</span>
-            <input class="fields-text__input" type="email" name="email" placeholder="Введите почту*" required>
+
+          <label class="fields-text__item  fields-text__item--contacts">
+            <span class="fields-text__title  fields-text__title--contacts">Адрес почты:</span>
+            <input class="fields-text__input  fields-text__input--contacts" type="email" name="email" placeholder="Введите почту *" required>
             <span class="fields-text__icon  fields-text__icon--email"></span>
           </label>
         </fieldset>
@@ -115,7 +151,7 @@
 
       <section class="form__fields  fields-radio">
         <fieldset class="fields-radio__items">
-          <legend class="fields-radio__title">С каким приложением путешествовали?</legend>
+          <legend class="fields-radio__legend">С каким приложением путешествовали?</legend>
           <label class="fields-radio__item">
             <input class="fields-radio__input" type="radio" name="app" value="iOS" checked>
             <span class="fields-radio__text">Pink для iOS</span>
@@ -132,13 +168,15 @@
       </section>
 
       <section class="form__fields  fields-text">
-        <label class="fields-text__label"  for="review">Опишите свои эмоции:</label>
-        <textarea class="fields-text__titlearea" id="review" name="review" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        <fieldset class="fields-text__items  fields-text__items--review">
+          <legend class="fields-text__legend">Опишите свои эмоции:</legend>
+          <textarea class="fields-text__textarea" name="review" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </fieldset>
       </section>
 
       <section class="form__fields  field-action">
-        <button class="field-action__btn  btn" type="submit" aria-label="Отправить форму">Отправить форму</button>
-          <p class="field-action__text"><span class="field-action__index">*</span> - обязательные поля</p>
+        <button class="field-action__btn  btn" type="submit">Отправить форму</button>
+        <p class="field-action__text"><span class="field-action__index">*</span> — обязательные <span class="field-action__hidden"> для заполнения</span> поля</p>
       </section>
       </div>
     </form>

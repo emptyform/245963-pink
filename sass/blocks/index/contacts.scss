@@ -5,88 +5,192 @@
 
 .contacts__wrapper {
   margin: 0;
-  padding: 28px 45px;
+  padding: 35px 45px;
   box-sizing: border-box;
 }
 
 .contacts__items {
-  @include reset; /* сброс стилей для ul*/
+  @include reset-ul-style;
   box-sizing: border-box;
 }
 
 .contacts__item {
   text-align: center;
-  margin-top: 15px;
+  margin: 19px 0 3px;
+
+  &:last-child {
+    margin-top: 26px;
+  }
 }
 
 .contacts__title {
+  margin: 26px 0 36px;
   text-align: center;
   font-size: $font-size__title--big;
-  line-height: 24px;
   font-weight: 100;
+  line-height: 28px;
   color: $color-gray-font;
 }
 
 .contacts__text {
-  font-weight: bold;
-  margin: 5px 0;
+  margin: 0;
+  font-size: $font-size__title;
+  font-weight: 700;
+  line-height: 22px;
 }
 
 .contacts__address,
 .contacts__number,
 .contacts__mail {
-  font-size: $font-size__title;
-  color: $color-red;
+  font-size: $font-size__title--big;
+  font-weight: 100;
   text-decoration: none;
+  color: $color-red;
+}
+
+.contacts__mail {
+  margin-top: 5px;
 }
 
 .contacts__address {
-  margin: 0;
+  margin-top: 5px;
+  line-height: 28px;
 }
 
 .contacts__map {
-  height: 200px;
-  width: 320px;
-  background: url("../img/bg-map-mobile@1x.png") center top no-repeat;
-  background-size: contain;
+  background: $color-white-gray url("../img/bg-map-mobile@1x.png") center top no-repeat;
+  background-size: cover;
 }
 
 @media (max-width: 767px) and (min-resolution: 144dpi), (max-width:767px) and (min-resolution: 1.5dppx) {
   .contacts__map {
-    background: url("../img/bg-map-mobile@2x.png") center top no-repeat;
-    background-size: contain;
+    background: $color-white-gray url("../img/bg-map-mobile@1x.png") center top no-repeat;
+    background-size: cover;
   }
 }
 
-/*
+
 @media (min-width: 660px) {
-  .contacts__map  {
+  .contacts {
     width: 660px;
-    background: #f5f2e4 url("../img/bg-map-tablet@1x.jpg") center top no-repeat;
-    background-size: contain;
   }
 
-  @media (min-width: 660px) and (min-resolution: 144dpi), (min-width:660px) and (min-resolution: 1.5dppx) {
-    .contacts__map  {
-      background: #f5f2e4 url("../img/bg-map-tablet@2x.jpg") center top no-repeat;
-      background-size: contain;
+  .contacts__wrapper {
+    padding: 47px 0 26px;
+  }
+
+  .contacts__items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .contacts__item {
+    width: 323px;
+    margin: 0;
+
+    &:last-child {
+      margin-top: 45px;
     }
+  }
+
+  .contacts__title {
+    margin: 0 115px 42px;
+    font-size: 40px;
+    line-height: 48px;
+    color: $color-black;
+  }
+
+  .contacts__text {
+    margin-bottom: 6px;
+  }
+
+  .contacts__address,
+  .contacts__number,
+  .contacts__mail {
+    margin: 0;
+  }
+
+  .contacts__address {
+    margin: 0 15px;
+  }
+
+  .contacts__map  {
+    width: 700px;
+    height: 380px;
+    background-image: url("../img/bg-map-mobile@1x.png");
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .contacts__map  {
+      background-image: url("../img/bg-map-mobile@1x.png");
+    }
+  }
+
+  .contacts__google-map {
+    width: 700px;
+    height: 380px;
   }
 }
 
 
 @media (min-width: 960px) {
-  .contacts__map {
-    background: #f5f2e4 url("../img/bg-map-desktop@1x.jpg") center top no-repeat;
+  .contacts {
     width: 960px;
-    background-size: contain;
   }
 
-  @media (min-width: 960px) and (min-resolution: 144dpi), (min-width:960px) and (min-resolution: 1.5dppx) {
+  .contacts__wrapper {
+    padding-top: 65px;
+  }
+
+  .contacts__items {
+    flex-wrap: nowrap;
+    justify-content:center;
+  }
+
+  .contacts__item {
+    width: 320px;
+
+    &:nth-child(2) {
+      order: 3;
+    }
+
+    &:last-child {
+      margin: 0;
+      order: 2;
+    }
+  }
+
+  .contacts__title {
+    margin: 0 125px 57px;
+    font-size: 50px;
+    line-height: 59px;
+  }
+
+  .contacts__text {
+    margin-bottom: 22px;
+  }
+
+  .contacts__address {
+    margin: 0 15px 0 8px;
+  }
+
+  .contacts__map {
+    width: 1200px;
+    height: 500px;
+    margin-left: -120px;
+    background-image: url("../img/bg-map-mobile@1x.png");
+  }
+
+  .contacts__google-map {
+    width: 1200px;
+    height: 500px;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .contacts__map {
-      background: #f5f2e4 url("../img/bg-map-desktop@2x.jpg") center top no-repeat;
-      background-size: contain;
+      background-image: url("../img/bg-map-mobile@1x.png");
     }
   }
 }
-*/

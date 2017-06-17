@@ -1,26 +1,36 @@
 .prices {
   width: 320px;
-  padding: 70px 0 100px;
+  padding: 67px 0 94px;
   margin: 0 auto;
   background-color: $color-white-gray;
 }
 
 .prices__wrapper {
+  width: 320px;
+  overflow: hidden; /*скрывает всё что вне элемента*/
   margin: 0;
   box-sizing: border-box;
 }
 
 .prices__table {
-  width: 320px;
+  position: relative;
+  width: 1120px;
+  margin-left: -539px;
+  box-sizing: border-box;
 }
 
 .prices__head {
+  width: 280px;
+  padding: 17px 12px 22px; /* временно */
   background-color: $color-background-gray;
   color: $color-white;
   font-size: $font-size__title;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 
 .prices__USD {
+  display: block;
   font-weight: 100;
   font-size: $font-size__title--big;
 }
@@ -32,35 +42,155 @@
 .prices__name,
 .prices__included,
 .prices__excluded {
+  position: relative;
+  width: 280px;
+  padding: 12px 5px 14px 22px; /* временно */
+  line-height: 32px;
+  text-transform: uppercase;
   background-color: $color-white;
+  box-sizing: border-box;
 }
 
-.prices__option-name {
-  font-size: 0;
+.prices__included--active::after,
+.prices__excluded--active::after {
+  position: absolute;
+  content:"";
+  width: 30px;
+  height: 25px;
+  left: 232px;
+  bottom: 10px;
+  background-color: transparent;
+  background-image: url("../img/icon-yes.svg"); /* Change color in SVG */
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
 }
 
-.prices__option-name--active {
-    font-size: $font-size__text;
-
-    &::after {
-      content: "";
-      display: table;
-      width: 21.7px;
-      height: 16px;
-      background-color: transparent;
-      background-image: url("../img/icon-yes.svg"); /* Change color in SVG */
-      background-repeat: no-repeat;
-      border: none;
-      cursor: pointer;
-    }
+.prices__excluded--active::after {
+  height: 30px;
+  left: 231px;
+  bottom: 15px;
+  background-image: url("../img/icon-no.svg"); /* Change color in SVG */
 }
 
-/*
 @media (min-width: 660px) {
+  .prices {
+    width: 660px;
+    padding: 0;
+    margin: 0 auto;
+  }
 
+  .prices__wrapper {
+    padding: 85px 20px 63px 17px;
+    overflow: visible;
+  }
+
+  .prices__table {
+    width: 620px;
+    margin-left: 0;
+    box-sizing: border-box;
+    border: 2px solid $color-white-gray;
+  }
+
+  .prices__head {
+    width: 155px;
+    padding: 12px 30px 8px 37px; /* временно */
+    font-size: 16px;
+    font-weight: 700;
+    box-sizing: border-box;
+
+    &--null {
+      background-color: transparent;
+    }
+  }
+
+  .prices__USD {
+    font-size: $font-size__title;
+  }
+
+  .prices__name {
+    width: 155px;
+    padding: 0 13px 7px; /* временно */
+    line-height: 38px;
+    text-transform: capitalize;
+  }
+
+  .prices__included,
+  .prices__excluded {
+    width: 155px;
+    padding: 0px 10px 4px; /* временно */
+  }
+
+  .prices__included::after,
+  .prices__excluded::after {
+    position: absolute;
+    content:"";
+    width: 30px;
+    height: 25px;
+    left: 67px;
+    bottom: 5px;
+    background-color: transparent;
+    background-image: url("../img/icon-yes.svg"); /* Change color in SVG */
+    background-repeat: no-repeat;
+    background-size: auto; /* ? */
+    border: none;
+    cursor: pointer;
+  }
+
+  .prices__excluded::after {
+    height: 30px;
+    bottom: 7px;
+    background-image: url("../img/icon-no.svg"); /* Change color in SVG */
+  }
+
+  .prices__option-name {
+    font-size: 0;
+    padding: 0;
+  }
 }
+
 
 @media (min-width: 960px) {
+  .prices {
+    width: 960px;
+  }
 
+  .prices__wrapper {
+    padding: 148px 10px 93px 6px;
+  }
+
+  .prices__table {
+    width: 950px;
+    box-sizing: border-box;
+    border: 2px solid $color-white-gray;
+  }
+
+  .prices__head {
+    width: 235px;
+    padding: 16px 55px 20px; /* временно */
+    font-size: $font-size__title
+  }
+
+  .prices__USD {
+    font-size: $font-size__title--big;
+  }
+
+  .prices__name {
+    width: 235px;
+    padding: 9px 18px 10px 20px; /* временно */
+    font-size: $font-size__title;
+    line-height: 40px;
+  }
+
+  .prices__included,
+  .prices__excluded {
+    width: 235px;
+    padding: 5px 90px; /* временно */
+  }
+
+  .prices__included::after,
+  .prices__excluded::after {
+    left: 100px;
+    bottom: 10px;
+  }
 }
-*/

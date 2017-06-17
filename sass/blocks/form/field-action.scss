@@ -4,21 +4,22 @@
   justify-content: space-between;
   align-items: center;
   width: 280px;
+  box-sizing: border-box;
 }
 
 .field-action__btn {
   width: 280px;
-  padding: 21px 10px;
+  padding: 17px 10px;
   border-radius: 2px;
   text-transform: uppercase;
-  font-weight: 400;
+  line-height: 30px;
   background-color: $color-green;
   color: $color-white;
   cursor: pointer;
 }
 
 .field-action__text {
-  margin: 40px 0 10px;
+  margin: 40px 0 20px;
   text-transform: uppercase;
 }
 
@@ -26,27 +27,34 @@
   color: $color-red;
 }
 
-/*
+.field-action__hidden {
+  display: none;
+}
+
+
 @media (min-width: 660px) {
   .field-action {
-    justify-content: space-between;
-    width: 648px;
+    flex-direction: row;
+    width: 620px;
   }
 
   .field-action__btn {
-    width: 325px;
+    width: 300px;
+    margin: 0;
+  }
+
+  .field-action__text {
+    margin: 0;
   }
 }
 
 
 @media (min-width: 960px) {
   .field-action {
-    justify-content: space-between;
     width: 960px;
   }
 
-  .field-action__btn {
-    width: 480px;
+  .field-action__hidden {
+    display: inline-block;
   }
 }
-*/

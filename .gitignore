@@ -6,5 +6,6 @@
 *.psd
 *.sublime*
 css/*.css
+img/layouts/*.jpg
 node_modules/
 Thumbs.db
