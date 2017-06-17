@@ -6,7 +6,7 @@
   }
 }
 
-@mixin reset {  /* сброс стилей для ul*/
+@mixin reset-ul-style {  /* сброс стилей для ul*/
   margin: 0px;
   padding: 0px;
   list-style: none; /* Маркеры исчезают*/
