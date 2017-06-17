@@ -82,7 +82,7 @@
     <form class="form" method="post" action="https://echo.htmlacademy.ru/">
       <div class="form__wrapper">
 
-        <section class="form__fields  fields-text">
+      <section class="form__fields  fields-text">
         <fieldset class="fields-text__items">
           <label class="fields-text__item">
             <span class="fields-text__title">Фамилия:</span>
@@ -101,11 +101,13 @@
 
       <section class="form__fields  fields-checkbox">
         <fieldset class="fields-checkbox__items">
-          <legend class="fields-checkbox__title">Ваши безбашенные достижения в путешествии</legend>
+          <legend class="fields-checkbox__legend">Ваши безбашенные достижения в путешествии</legend>
+
           <label class="fields-checkbox__item">
             <input class="fields-checkbox__input" type="checkbox" name="achievements" value="Selfie with shark" checked>
             <span class="fields-checkbox__text">Сделал селфи с акулой</span>
           </label>
+
           <label class="fields-checkbox__item">
             <input class="fields-checkbox__input" type="checkbox" name="achievements" value="beach" checked>
             <span class="fields-checkbox__text">Обгорел на пляже</span>
@@ -131,15 +133,17 @@
 
       <section class="form__fields  fields-text">
         <fieldset class="fields-text__items  fields-text__items--contacts">
-          <legend class="fields-text__title  fields-text__title--hidden">Контактная информация</legend>
-          <label class="fields-text__item">
-            <span class="fields-text__title">Номер телефона:</span>
-            <input class="fields-text__input" type="tel" name="tel" placeholder="Номер, пожалуйста">
+          <legend class="fields-text__legend  fields-text__legend--hidden">Контактная информация</legend>
+
+          <label class="fields-text__item  fields-text__item--contacts">
+            <span class="fields-text__title  fields-text__title--contacts">Номер телефона:</span>
+            <input class="fields-text__input  fields-text__input--contacts" type="tel" name="tel" placeholder="Номер, пожалуйста">
             <span class="fields-text__icon  fields-text__icon--phone"></span>
           </label>
-          <label class="fields-text__item">
-            <span class="fields-text__title">Адресок почты:</span>
-            <input class="fields-text__input" type="email" name="email" placeholder="Введите почту *" required>
+
+          <label class="fields-text__item  fields-text__item--contacts">
+            <span class="fields-text__title  fields-text__title--contacts">Адрес почты:</span>
+            <input class="fields-text__input  fields-text__input--contacts" type="email" name="email" placeholder="Введите почту *" required>
             <span class="fields-text__icon  fields-text__icon--email"></span>
           </label>
         </fieldset>
@@ -147,7 +151,7 @@
 
       <section class="form__fields  fields-radio">
         <fieldset class="fields-radio__items">
-          <legend class="fields-radio__title">С каким приложением путешествовали?</legend>
+          <legend class="fields-radio__legend">С каким приложением путешествовали?</legend>
           <label class="fields-radio__item">
             <input class="fields-radio__input" type="radio" name="app" value="iOS" checked>
             <span class="fields-radio__text">Pink для iOS</span>
@@ -164,13 +168,15 @@
       </section>
 
       <section class="form__fields  fields-text">
-        <label class="fields-text__label"  for="review">Опишите свои эмоции:</label>
-        <textarea class="fields-text__titlearea" id="review" name="review" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        <fieldset class="fields-text__items  fields-text__items--review">
+          <legend class="fields-text__legend">Опишите свои эмоции:</legend>
+          <textarea class="fields-text__textarea" name="review" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </fieldset>
       </section>
 
       <section class="form__fields  field-action">
         <button class="field-action__btn  btn" type="submit">Отправить форму</button>
-          <p class="field-action__text"><span class="field-action__index">*</span> — обязательные поля</p>
+        <p class="field-action__text"><span class="field-action__index">*</span> — обязательные <span class="field-action__hidden"> для заполнения</span> поля</p>
       </section>
       </div>
     </form>

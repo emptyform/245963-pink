@@ -28,7 +28,7 @@
 }
 
 .slogan__text-span {
-  display: block;
+  display: none;
   padding-top: 30px;
 }
 
@@ -57,6 +57,7 @@
   }
 
   .slogan__text-span {
+    display: block;
     padding-top: 0;
     padding: 0 10px;
   }
@@ -80,7 +81,7 @@
     }
 
     &--wide {
-      padding: 93px 100px 32px;
+      padding: 93px 100px 64px;
       font-size: $font-size__title;
       line-height: 30px;
     }
