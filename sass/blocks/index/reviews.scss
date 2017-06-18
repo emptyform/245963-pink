@@ -96,7 +96,7 @@
   }
 
   .reviews__wrapper {
-    padding: 132px 120px 40px;
+    padding: 130px 120px 50px;
   }
 
   .reviews__author‐name {
@@ -106,5 +106,10 @@
 
   .reviews__author-desc {
     font-size: $font-size__title;
+  }
+
+  .reviews__text:before,
+  .reviews__text:after {
+      display: none;
   }
 }
