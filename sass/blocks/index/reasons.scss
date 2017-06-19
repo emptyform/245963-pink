@@ -31,6 +31,10 @@
   .reasons__item {
     margin: 0;
     margin-left: 310px;
+
+    &:last-child {
+      margin-top: 105px;
+    }
   }
 }
 
@@ -51,5 +55,9 @@
 
   .reasons__item {
     margin: 0;
+
+    &:last-child {
+      margin-top: 75px;
+    }
   }
 }

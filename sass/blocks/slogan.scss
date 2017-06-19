@@ -28,8 +28,12 @@
 }
 
 .slogan__text-span {
-  display: none;
+  display: block;
   padding-top: 30px;
+
+  &--wide {
+    display: none;
+  }
 }
 
 

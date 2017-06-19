@@ -23,7 +23,8 @@
 
 @media (min-width: 660px) {
   .posts {
-    width: 660px;
+    width: 100%; /* new */
+    /*width: 660px;*/
   }
 
   .posts__wrapper {
@@ -31,7 +32,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 0 20px;
+    width: 660px; /* new */
+    padding: 0 20px; /* new */
   }
 
   .posts__item {
@@ -46,11 +48,14 @@
 
 @media (min-width: 960px) {
   .posts {
-    width: 960px;
+    width: 100%; /* new */
+    max-width: 1200px; /* new */
+    /*width: 960px;*/
   }
 
   .posts__wrapper {
-    padding: 0 10px;
+    width: 960px; /* new */
+    padding: 0 10px; /* new */
   }
 
   .posts__item {

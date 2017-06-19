@@ -46,7 +46,6 @@
 
     &--wide {
       display: block;
-      margin-top: 105px;
     }
   }
 
@@ -59,7 +58,7 @@
     text-align: left;
 
     &--wide {
-      margin-right: 140px;
+      margin-right: 150px;
       font-size: $font-size__title--huge;
       line-height: 36px;
       font-weight: 700;
@@ -103,6 +102,7 @@
   .reason {
     width: 313px;
     align-items: center;
+    justify-content: space-between;
     padding: 0;
 
     &--wide {
@@ -110,25 +110,37 @@
       flex-direction: row;
       justify-content: space-between;
       width: 940px;
-      margin-top: 52px;
     }
   }
 
   .reason__desc {
-    margin: 56px 40px 0;
+    margin: 55px 35px 0 35px;
     order: 2;
+
+    &--left {
+      margin: 53px 40px 0 27px;
+      line-height: 28px;
+    }
+
+    &--right {
+      margin: 53px 27px 0 40px;
+      line-height: 28px
+    }
   }
 
   .reason__title {
     padding: 0;
     margin-bottom: 26px;
+    padding: 0 10px;
     text-align: center;
     font-size: $font-size__title--huge;
     line-height: 30px;
 
     &--wide {
       text-align: left;
+      padding: 0;
       margin-right: 20px;
+      margin-bottom: 23px;
     }
   }
 
@@ -136,13 +148,13 @@
     text-align: center;
     margin: 0;
     font-size: $font-size__title;
-    line-height: 28px;
+    line-height: 30px;
     font-weight: 400;
 
     &--wide {
       text-align: left;
       line-height: 30px;
-      margin: 0 15px 30px 0;
+      margin: 0 15px 32px 0;
     }
   }
 
@@ -166,7 +178,7 @@
 
   .reason__research {
     width: 545px;
-    margin: 29px 30px 0 0;
+    margin: 25px 30px 0 0;
 
   }
 

@@ -5,7 +5,7 @@
 
 .reviews__wrapper {
   margin: 0;
-  padding: 5px 20px 92px;
+  padding: 5px 20px 40px;
   box-sizing: border-box;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .reviews__text {
-  margin: 16px 0;
+  margin: 16px 0 32px;
   line-height: 30px;
   color: $color-gray-font;
   quotes: "«" "»"; /* Устанавливаем вид кавычек */
@@ -49,6 +49,60 @@
   }
 }
 
+.reviews__btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  margin: 0 auto;
+}
+
+.reviews__btn {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  margin-right: 15px;
+  transition-duration: 0.2s;
+  border-radius: 50%;
+  border: 3px solid $color-white;
+  color: $color-gray-3;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  &:last-child {
+    order: -1;
+  }
+
+  &:nth-child(2) {
+    margin-right: 0;
+  }
+
+  &:hover {
+    color: $color-gray-6;
+  }
+
+  &:focus {
+    color: $color-white;
+    border-color: $color-black;
+  }
+}
+
+.reviews__btn--active {
+  color: $color-white;
+  border-color: $color-black;
+}
+
+.reviews__btn:nth-child(1):focus ~ .reviews__btn:last-child {
+  color: $color-gray-3;
+  border-color: $color-white;
+}
+
+.reviews__btn:nth-child(2):focus ~ .reviews__btn:last-child {
+  color: $color-gray-3;
+  border-color: $color-white;
+}
+
 
 @media (min-width: 660px) {
   .reviews {
@@ -56,7 +110,7 @@
   }
 
   .reviews__wrapper {
-    padding: 72px 10px 67px;
+    padding: 72px 10px 18px;
   }
 
   .reviews__item {
@@ -70,7 +124,7 @@
   }
 
   .reviews__author‐name {
-    margin: 20px 0 0;
+    margin: 3px 0 0;
     font-size: 20px;
     line-height: 30px;
     order: 2;
@@ -79,6 +133,7 @@
   .reviews__author-desc {
     display: block;
     margin: 0;
+    margin-bottom: 35px;
     line-height: 30px;
     order: 3;
   }
@@ -86,6 +141,10 @@
   .reviews__text {
     font-size: $font-size__title;
     order: 1;
+  }
+
+  .reviews__btn:last-child {
+    order: -2;
   }
 }
 
@@ -96,15 +155,24 @@
   }
 
   .reviews__wrapper {
-    padding: 132px 120px 40px;
+    padding: 130px 120px 16px;
   }
 
   .reviews__author‐name {
-    margin: 20px 0 0;
+    margin: 5px 0 0;
     font-size: $font-size__title--big;
   }
 
   .reviews__author-desc {
     font-size: $font-size__title;
+  }
+
+  .reviews__text:before,
+  .reviews__text:after {
+      display: none;
+  }
+
+  .reviews__btn-container {
+    display: none;
   }
 }

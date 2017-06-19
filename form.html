@@ -102,50 +102,51 @@
       <section class="form__fields  fields-checkbox">
         <fieldset class="fields-checkbox__items">
           <legend class="fields-checkbox__legend">Ваши безбашенные достижения в путешествии</legend>
-
-          <label class="fields-checkbox__item">
-            <input class="fields-checkbox__input" type="checkbox" name="achievements" value="Selfie with shark" checked>
-            <span class="fields-checkbox__text">Сделал селфи с акулой</span>
-          </label>
-
-          <label class="fields-checkbox__item">
-            <input class="fields-checkbox__input" type="checkbox" name="achievements" value="beach" checked>
-            <span class="fields-checkbox__text">Обгорел на пляже</span>
-          </label>
-          <label class="fields-checkbox__item">
-            <input class="fields-checkbox__input" type="checkbox" name="achievements" value="Chuck Norris">
-            <span class="fields-checkbox__text">Видел Чака Норриса</span>
-          </label>
-          <label class="fields-checkbox__item">
-            <input class="fields-checkbox__input" type="checkbox" name="achievements" value="Souvenirs">
-            <span class="fields-checkbox__text">Накупил сувениров</span>
-          </label>
-          <label class="fields-checkbox__item">
-            <input class="fields-checkbox__input" type="checkbox" name="achievements" value="tower" checked>
-            <span class="fields-checkbox__text">Удержал башню</span>
-          </label>
-          <label class="fields-checkbox__item">
-            <input class="fields-checkbox__input" type="checkbox" name="achievements" value="hotel">
-            <span class="fields-checkbox__text">Разгромил отель</span>
-          </label>
+          <div class="fields-checkbox__container">
+            <label class="fields-checkbox__item">
+              <input class="fields-checkbox__input" type="checkbox" name="achievements" value="Selfie with shark" checked>
+              <span class="fields-checkbox__text">Сделал селфи с акулой</span>
+            </label>
+            <label class="fields-checkbox__item">
+              <input class="fields-checkbox__input" type="checkbox" name="achievements" value="beach" checked>
+              <span class="fields-checkbox__text">Обгорел на пляже</span>
+            </label>
+            <label class="fields-checkbox__item">
+              <input class="fields-checkbox__input" type="checkbox" name="achievements" value="Chuck Norris">
+              <span class="fields-checkbox__text">Видел Чака Норриса</span>
+            </label>
+            <label class="fields-checkbox__item">
+              <input class="fields-checkbox__input" type="checkbox" name="achievements" value="Souvenirs">
+              <span class="fields-checkbox__text">Накупил сувениров</span>
+            </label>
+            <label class="fields-checkbox__item">
+              <input class="fields-checkbox__input" type="checkbox" name="achievements" value="tower" checked>
+              <span class="fields-checkbox__text">Удержал башню</span>
+            </label>
+            <label class="fields-checkbox__item">
+              <input class="fields-checkbox__input" type="checkbox" name="achievements" value="hotel">
+              <span class="fields-checkbox__text">Разгромил отель</span>
+            </label>
+          </div>
         </fieldset>
       </section>
 
       <section class="form__fields  fields-text">
         <fieldset class="fields-text__items  fields-text__items--contacts">
           <legend class="fields-text__legend  fields-text__legend--hidden">Контактная информация</legend>
+          <div class="fields-text__container">
+            <label class="fields-text__item  fields-text__item--contacts">
+              <span class="fields-text__title  fields-text__title--contacts">Номер телефона:</span>
+              <input class="fields-text__input  fields-text__input--contacts" type="tel" name="tel" placeholder="Номер, пожалуйста">
+              <span class="fields-text__icon  fields-text__icon--phone"></span>
+            </label>
 
-          <label class="fields-text__item  fields-text__item--contacts">
-            <span class="fields-text__title  fields-text__title--contacts">Номер телефона:</span>
-            <input class="fields-text__input  fields-text__input--contacts" type="tel" name="tel" placeholder="Номер, пожалуйста">
-            <span class="fields-text__icon  fields-text__icon--phone"></span>
-          </label>
-
-          <label class="fields-text__item  fields-text__item--contacts">
-            <span class="fields-text__title  fields-text__title--contacts">Адрес почты:</span>
-            <input class="fields-text__input  fields-text__input--contacts" type="email" name="email" placeholder="Введите почту *" required>
-            <span class="fields-text__icon  fields-text__icon--email"></span>
-          </label>
+            <label class="fields-text__item  fields-text__item--contacts">
+              <span class="fields-text__title  fields-text__title--contacts">Адрес почты:</span>
+              <input class="fields-text__input  fields-text__input--contacts" type="email" name="email" placeholder="Введите почту *" required>
+              <span class="fields-text__icon  fields-text__icon--email"></span>
+            </label>
+          </div>
         </fieldset>
       </section>
 
