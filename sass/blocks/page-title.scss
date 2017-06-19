@@ -27,13 +27,15 @@
 
 @media (min-width: 660px) {
   .page-title {
-    width: 660px;
+    width: 100%; /* new */
+    /*width: 660px;*/
   }
 
   .page-title__wrapper {
-    width: 700px;
+    width: 660px; /* new */
+    /*width: 700px;*/
+    /*margin-left: -20px;*/
     min-height: 330px;
-    margin-left: -20px;
     background-position: 50% 37%;
     background-size: 155%;
   }
@@ -47,13 +49,16 @@
 
 @media (min-width: 960px) {
   .page-title {
-    width: 960px;
+    width: 100%; /* new */
+    max-width: 1200px; /* new */
+    /*width: 960px;*/
   }
 
   .page-title__wrapper {
-    width: 1200px;
+    width: 960px; /* new */
+    /*width: 1200px;*/
+    /*margin-left: -120px;*/
     min-height: 285px;
-    margin-left: -120px;
     background-position: 50% 55%;
     background-size: 200%;
   }
@@ -62,7 +67,7 @@
     padding: 65px 280px;
 
     &--wide {
-      padding: 65px 110px;
+      padding: 65px 90px;
     }
   }
 }

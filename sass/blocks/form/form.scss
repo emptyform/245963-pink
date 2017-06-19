@@ -112,7 +112,11 @@
     }
 
     &:nth-child(5) {
-      margin-bottom: 65px;
+      margin-bottom: 64px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 }

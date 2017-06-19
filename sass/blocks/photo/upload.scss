@@ -92,7 +92,8 @@
 
 @media (min-width: 660px) {
   .upload {
-    width: 660px;
+    width: 100%; /* new */
+    /*width: 660px;*/
   }
 
   .upload__title-container {
@@ -108,9 +109,10 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    margin-left: -20px;
-    width: 700px;
-    padding: 57px 40px 55px;
+    width: 660px; /* new */
+    /*width: 700px;*/
+    /*margin-left: -20px;*/
+    padding: 57px 20px 55px;
     box-sizing: border-box;
   }
 
@@ -206,7 +208,9 @@
 
 @media (min-width: 960px) {
   .upload {
-    width: 960px;
+    width: 100%; /* new */
+    max-width: 1200px; /* new */
+    /*width: 960px;*/
     padding-bottom: 27px;
   }
 
