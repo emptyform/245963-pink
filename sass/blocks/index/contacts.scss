@@ -154,7 +154,8 @@
 
 @media (min-width: 960px) {
   .contacts {
-    width: 960px;
+    width: 100%;
+    max-width: 1200px;
   }
 
   .contacts__wrapper {
@@ -180,7 +181,9 @@
   }
 
   .contacts__title {
-    margin: 0 125px 57px;
+    margin: 0 auto;
+    margin-bottom: 57px;
+    width: 480px;
     font-size: 50px;
     line-height: 59px;
   }
@@ -195,7 +198,8 @@
 
   .contacts__map {
     height: 500px;
-    width: 960px;
+    width: 100%;
+    max-width: 1200px;
     background-image: url("../img/bg-map-desktop@1x.jpg");
   }
 
@@ -211,6 +215,7 @@
 
   .contacts__google-map {
     height: 500px;
-    width: 960px;
+    width: 100%;
+    max-width: 1200px;
   }
 }

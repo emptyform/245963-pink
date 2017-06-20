@@ -33,8 +33,25 @@
   }
 }
 
-.page-header__logo-link {
+.page-header__logo-image {
+  display: block;
 
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
+}
+
+.page-header__logo-image-path {
+  fill: $color-white;
+}
+
+.page-header__logo-image:hover .page-header__logo-image-path {
+  fill: $color-red;
+}
+
+.page-header__logo-image:active .page-header__logo-image-path {
+  fill: $color-gray-9;
 }
 
 .page-header__btn-close {
@@ -70,11 +87,11 @@
   cursor: auto;
 
   &:hover {
-    color: $color-red-2;
+    color: $color-red;
   }
 
   &:active {
-    color: $color-red-3
+    color: $color-gray-9;
   }
 }
 
@@ -94,6 +111,15 @@
     &--logo {
       align-items: flex-end;
       padding: 26px 20px 39px;
+    }
+  }
+
+  .page-header__logo-image {
+    display: block;
+
+    &--mobile,
+    &--desktop {
+      display: none;
     }
   }
 
@@ -137,6 +163,15 @@
       width: 90px; /* временно */
       margin-right: 150px; /* временно */
       padding: 18px 5px; /* временно */
+    }
+  }
+
+  .page-header__logo-image {
+    display: block;
+
+    &--mobile,
+    &--tablet {
+      display: none;
     }
   }
 
