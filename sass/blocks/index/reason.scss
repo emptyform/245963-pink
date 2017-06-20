@@ -28,14 +28,19 @@
 
 .reason__image {
   display: none;
-  margin-top: 27px;
-  width: 158px;
-  height: 316px;
+  width: 157px;
   background-size: cover;
 
   &--active {
     display: inline-block;
   }
+}
+
+.reason__container-image {
+  margin-top: 27px;
+  width: 157px;
+  height: 277px;
+  overflow: hidden;
 }
 
 
@@ -75,9 +80,15 @@
   }
 
   .reason__image {
+    width: 268px;
+    height: 481px;
+  }
+
+  .reason__container-image {
     position: absolute;
-    width: 269px;
-    height: 482px;
+    margin-top: 27px;
+    width: 268px;
+    height: 481px;
     left: 20px;
     top: -8px;
   }
@@ -162,8 +173,16 @@
     display: inline-block;
     position: relative;
     margin-top: 0;
-    width: 185px;
-    height: 301px;
+    width: 186px;
+    height: 302px;
+    order: 1;
+  }
+
+  .reason__container-image {
+    position: relative;
+    margin-top: 0;
+    width: 186px;
+    height: 302px;
     left: 0;
     top: 0;
     order: 1;

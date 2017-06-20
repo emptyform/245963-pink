@@ -7,7 +7,7 @@
 
 .prices__wrapper {
   width: 320px;
-  overflow: hidden; /*скрывает всё что вне элемента*/
+  overflow: hidden;
   margin: 0;
   padding-top: 4px;
   box-sizing: border-box;
@@ -63,7 +63,7 @@
   left: 232px;
   bottom: 10px;
   background-color: transparent;
-  background-image: url("../img/icon-yes.svg"); /* Change color in SVG */
+  background-image: url("../img/icon-yes.svg");
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
@@ -73,7 +73,7 @@
   height: 30px;
   left: 231px;
   bottom: 15px;
-  background-image: url("../img/icon-no.svg"); /* Change color in SVG */
+  background-image: url("../img/icon-no.svg");
 }
 
 .prices__btn-container {
@@ -192,7 +192,7 @@
     left: 67px;
     bottom: 5px;
     background-color: transparent;
-    background-image: url("../img/icon-yes.svg"); /* Change color in SVG */
+    background-image: url("../img/icon-yes.svg");
     background-repeat: no-repeat;
     background-size: auto; /* ? */
     border: none;
@@ -202,7 +202,7 @@
   .prices__excluded::after {
     height: 30px;
     bottom: 7px;
-    background-image: url("../img/icon-no.svg"); /* Change color in SVG */
+    background-image: url("../img/icon-no.svg");
   }
 
   .prices__option-name {

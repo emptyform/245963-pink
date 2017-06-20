@@ -23,8 +23,7 @@
 
 @media (min-width: 660px) {
   .posts {
-    width: 100%; /* new */
-    /*width: 660px;*/
+    width: 100%;
   }
 
   .posts__wrapper {
@@ -32,8 +31,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    width: 660px; /* new */
-    padding: 0 20px; /* new */
+    width: 660px;
+    padding: 0 20px;
   }
 
   .posts__item {
@@ -48,14 +47,13 @@
 
 @media (min-width: 960px) {
   .posts {
-    width: 100%; /* new */
-    max-width: 1200px; /* new */
-    /*width: 960px;*/
+    width: 100%;
+    max-width: 1200px;
   }
 
   .posts__wrapper {
-    width: 960px; /* new */
-    padding: 0 10px; /* new */
+    width: 960px;
+    padding: 0 10px;
   }
 
   .posts__item {

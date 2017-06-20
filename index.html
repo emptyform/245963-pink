@@ -39,7 +39,11 @@
       <ul class="page-header__items">
         <li class="page-header__item  page-header__item--logo">
           <a class="page-header__logo-link" href="#">
-            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Лого">
+            <picture> <!-- заменить на спрайты свг-->
+              <source media="(min-width:960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width:660px) and (max-width: 959px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Лого шапка">
+            </picture>
           </a>
           <button class="page-header__btn-close" type="button" aria-label="Закрыть меню">
             <svg class="page-header__image-btn-close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
@@ -69,9 +73,9 @@
     <section class="downloads">
       <div class="downloads__wrapper-image">
         <picture>
-          <source media="(min-width:1200px)" srcset="img/iphone-hand-mobile@1x.png">
-          <source media="(min-width:768px) and (max-width: 1199px)" srcset="img/iphone-hand-mobile@1x.png">
-          <img class="downloads__image" src="img/iphone-hand-mobile@1x.png" alt="Мобильный" width="320">
+          <source media="(min-width:960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+          <source media="(min-width:660px) and (max-width: 959px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+          <img class="downloads__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@1x.png 1x, img/iphone-hand-mobile@2x.png 2x" alt="Рука с айфоном" width="320">
         </picture>
       </div>
       <div class="downloads__content">
@@ -105,7 +109,10 @@
             <h2 class="reason__title">Поднимает настроение</h2>
             <p class="reason__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </div>
-          <img class="reason__image" src="img/iphone-screen-mobile@1x.png" alt="Мобильный обычный">
+          <picture>
+            <source media="(min-width:960px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
+            <img class="reason__image" src="img/iphone-screen-1-tablet@1x.png" srcset="img/iphone-screen-1-tablet@1x.png 1x, img/iphone-screen-1-tablet@2x.png 2x" alt="Айфон черно-белый">
+          </picture>
         </li>
 
         <li class="reasons__item  reason">
@@ -113,7 +120,10 @@
             <h2 class="reason__title">Меняет мир вокруг</h2>
             <p class="reason__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </div>
-          <img class="reason__image" src="img/iphone-screen-mobile@1x.png" alt="Мобильный в цвете">
+          <picture>
+            <source media="(min-width:960px)" srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x">
+            <img class="reason__image" src="img/iphone-screen-2-tablet@1x.png" srcset="img/iphone-screen-2-tablet@1x.png 1x, img/iphone-screen-2-tablet@2x.png 2x" alt="Айфон в цвете">
+          </picture>
         </li>
 
         <li class="reasons__item  reason">
@@ -121,7 +131,13 @@
             <h2 class="reason__title">Заводит новых друзей</h2>
             <p class="reason__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
           </div>
-          <img class="reason__image  reason__image--active" src="img/iphone-screen-mobile@1x.png" alt="Мобильный в цвете со смайликом">
+          <div class="reason__container-image">
+            <picture>
+              <source media="(min-width:960px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
+              <source media="(min-width:660px) and (max-width: 959px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+              <img class="reason__image  reason__image--active" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@1x.png 1x, img/iphone-screen-mobile@2x.png 2x" alt="Айфон в цвете со смайлом">
+            </picture>
+          </div>
         </li>
 
         <li class="reasons__item  reason  reason--wide">
@@ -233,15 +249,19 @@
         </ul>
       </div>
       <div class="contacts__map">
-        <iframe class="contacts__google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.3208946163546!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1495891415810" width="320" height="200" style="border:0" allowfullscreen>
-        </iframe>
+        <img class="contacts__triangle-image" src="img/bg-triangle-white-footer.svg" alt="Треугольник карта">
+        <div class="contacts__google-map" id="google-map"></div>
       </div>
     </section>
 
     <footer class="page-footer  page-footer--for-index">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo-link" href="#">
-          <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" alt="Лого">
+          <picture> <!-- заменить на спрайты свг-->
+            <source media="(min-width:960px)" srcset="img/logo-pink-blue-desktop.svg">
+            <source media="(min-width:660px) and (max-width: 959px)" srcset="img/logo-pink-blue-mobile.svg">
+            <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" alt="Лого футера">
+          </picture>
         </a>
 
         <div class="page-footer__social-items">
@@ -276,5 +296,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/google-map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDX5WYsszhD50CHJ5wMpWp5Cn8eY3mjOio&callback=initMap"></script>
   </body>
 </html>

@@ -73,18 +73,15 @@
 
 @media (min-width: 660px) {
   .page-header {
-    width: 100%; /* new */
-    /*width: 660px;*/
+    width: 100%;
   }
 
   .page-header__items {
-    width: 660px; /* new */
+    width: 660px;
   }
 
   .page-header__item {
-    width: 660px; /* new */
-    /*width: 700px;*/
-    /*margin-left: -20px;*/
+    width: 660px;
 
     &--logo {
       padding: 44px 0 39px 93px;
@@ -103,15 +100,12 @@
 
 @media (min-width: 960px) {
   .page-header {
-    width: 100%; /* new */
-    max-width: 1200px; /* new */
-    /*width: 960px;*/
+    width: 100%;
+    max-width: 1200px;
   }
 
   .page-header__items {
-    width: 960px; /* new */
-    /*width: 1200px;*/
-    /*margin-left: -120px;*/
+    width: 960px;
     padding: 21px 0 25px 77px; /* временно */
     background-color: $color-background-gray;
   }

@@ -40,7 +40,11 @@
         <ul class="page-header__items">
           <li class="page-header__item  page-header__item--logo">
             <a class="page-header__logo-link" href="index.html">
-              <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Лого">
+              <picture> <!-- заменить на спрайты свг-->
+                <source media="(min-width:960px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width:660px) and (max-width: 959px)" srcset="img/logo-pink-white-tablet.svg">
+                <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Лого шапка">
+              </picture>
             </a>
             <button class="page-header__btn-close" type="button" aria-label="Закрыть меню">
               <svg class="page-header__image-btn-close"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
@@ -83,9 +87,9 @@
         <article class="posts__item  post">
           <a class="post__link-full-image  post__link-full-image--wide" href="#">
             <picture>
-              <source media="(min-width:1200px)" srcset="img/panorama-mobile@1x.jpg">
-              <source media="(min-width:768px) and (max-width: 1199px)" srcset="img/panorama-mobile@1x.jpg">
-              <img class="post__image  post__image--wide" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@1x.jpg" alt="Панорама дня">
+              <source media="(min-width:960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width:660px) and (max-width: 959px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img class="post__image  post__image--wide" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@1x.jpg 1x, img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
             </picture>
           </a>
           <div class="post___label-block">
@@ -104,9 +108,9 @@
         <article class="posts__item  post">
           <a class="post__link-full-image" href="#">
             <picture>
-              <source media="(min-width:1200px)" srcset="img/photo-1-mobile@1x.jpg">
-              <source media="(min-width:768px) and (max-width: 1199px)" srcset="img/photo-1-mobile@1x.jpg">
-              <img class="post__image" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@1x.jpg" alt="Авто">
+              <source media="(min-width:960px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width:660px) and (max-width: 959px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+              <img class="post__image" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@1x.jpg 1x, img/photo-1-mobile@2x.jpg 2x" alt="Авто">
             </picture>
           </a>
           <div class="post__container">
@@ -122,9 +126,9 @@
         <article class="posts__item  post">
           <a class="post__link-full-image" href="#">
             <picture>
-              <source media="(min-width:1200px)" srcset="img/photo-2-mobile@1x.jpg">
-              <source media="(min-width:768px) and (max-width: 1199px)" srcset="img/photo-2-mobile@1x.jpg">
-              <img class="post__image" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@1x.jpg" alt="Барабаны">
+              <source media="(min-width:960px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width:660px) and (max-width: 959px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+              <img class="post__image" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@1x.jpg 1x, img/photo-2-mobile@1x.jpg 2x" alt="Барабаны">
             </picture>
           </a>
           <div class="post__container">
@@ -140,9 +144,9 @@
         <article class="posts__item  post">
           <a class="post__link-full-image" href="#">
             <picture>
-              <source media="(min-width:1200px)" srcset="img/photo-3-mobile@1x.jpg">
-              <source media="(min-width:768px) and (max-width: 1199px)" srcset="img/photo-3-mobile@1x.jpg">
-              <img class="post__image" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@1x.jpg" alt="Неволя">
+              <source media="(min-width:960px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width:660px) and (max-width: 959px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+              <img class="post__image" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@1x.jpg 1x, img/photo-3-mobile@1x.jpg 2x" alt="Неволя">
             </picture>
           </a>
           <div class="post__container">
@@ -158,9 +162,9 @@
         <article class="posts__item  post">
           <a class="post__link-full-image" href="#">
             <picture>
-              <source media="(min-width:1200px)" srcset="img/photo-4-mobile@1x.jpg">
-              <source media="(min-width:768px) and (max-width: 1199px)" srcset="img/photo-4-mobile@1x.jpg">
-              <img class="post__image" src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@1x.jpg" alt="Бахча">
+              <source media="(min-width:960px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width:660px) and (max-width: 959px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+              <img class="post__image" src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@1x.jpg 1x, img/photo-4-mobile@1x.jpg 2x" alt="Бахча">
             </picture>
           </a>
           <div class="post__container">
@@ -176,9 +180,9 @@
         <article class="posts__item  post">
           <a class="post__link-full-image" href="#">
             <picture>
-              <source media="(min-width:1200px)" srcset="img/photo-5-mobile@1x.jpg">
-              <source media="(min-width:768px) and (max-width: 1199px)" srcset="img/photo-5-mobile@1x.jpg">
-              <img class="post__image" src="img/photo-5-mobile@1x.jpg" srcset="img/photo-5-mobile@1x.jpg" alt="Горы">
+              <source media="(min-width:960px)" srcset="img/photo-5-desktop@1x.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+              <source media="(min-width:660px) and (max-width: 959px)" srcset="img/photo-5-tablet@1x.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+              <img class="post__image" src="img/photo-5-mobile@1x.jpg" srcset="img/photo-5-mobile@1x.jpg 1x, img/photo-5-mobile@1x.jpg 2x" alt="Горы">
             </picture>
           </a>
           <div class="post__container">
@@ -194,9 +198,9 @@
         <article class="posts__item  post">
           <a class="post__link-full-image" href="#">
             <picture>
-              <source media="(min-width:1200px)" srcset="img/photo-6-mobile@1x.jpg">
-              <source media="(min-width:768px) and (max-width: 1199px)" srcset="img/photo-6-mobile@1x.jpg">
-              <img class="post__image" src="img/photo-6-mobile@1x.jpg" srcset="img/photo-6-mobile@1x.jpg" alt="Полёт">
+              <source media="(min-width:960px)" srcset="img/photo-6-desktop@1x.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+              <source media="(min-width:660px) and (max-width: 959px)" srcset="img/photo-6-tablet@1x.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+              <img class="post__image" src="img/photo-6-mobile@1x.jpg" srcset="img/photo-6-mobile@1x.jpg 1x, img/photo-6-mobile@1x.jpg 2x" alt="Полёт">
             </picture>
           </a>
           <div class="post__container">
@@ -219,9 +223,9 @@
       <div class="upload__wrapper">
         <a class="upload__link-full-image" href="#">
           <picture>
-            <source media="(min-width:1200px)" srcset="img/photo-7-mobile@1x.jpg">
-            <source media="(min-width:768px) and (max-width: 1199px)" srcset="img/photo-7-mobile@1x.jpg">
-            <img class="upload__image" src="img/photo-7-mobile@1x.jpg" srcset="img/photo-7-mobile@1x.jpg" alt="Ваше фото">
+            <source media="(min-width:960px)" srcset="img/photo-7-desktop@1x.jpg 1x, img/photo-7-desktop@2x.jpg 2x">
+            <source media="(min-width:660px) and (max-width: 959px)" srcset="img/photo-7-tablet@1x.jpg 1x, img/photo-7-tablet@2x.jpg 2x">
+            <img class="post__image" src="img/photo-7-mobile@1x.jpg" srcset="img/photo-7-mobile@1x.jpg 1x, img/photo-7-mobile@1x.jpg 2x" alt="Ваше фото">
           </picture>
         </a>
 
@@ -257,7 +261,11 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo-link" href="index.html">
-          <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" alt="Лого">
+          <picture> <!-- заменить на спрайты свг-->
+            <source media="(min-width:960px)" srcset="img/logo-pink-blue-desktop.svg">
+            <source media="(min-width:660px) and (max-width: 959px)" srcset="img/logo-pink-blue-mobile.svg">
+            <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" alt="Лого футера">
+          </picture>
         </a>
 
         <div class="page-footer__social-items">
