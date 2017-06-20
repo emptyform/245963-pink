@@ -4,6 +4,7 @@
 }
 
 .reviews__wrapper {
+  position: relative;
   margin: 0;
   padding: 5px 20px 40px;
   box-sizing: border-box;
@@ -14,6 +15,7 @@
   margin: 0;
   margin-top: 25px;
   text-align: center;
+  z-index: 1;
 
   &:first-child {
     margin-top: 0;
@@ -103,6 +105,10 @@
   border-color: $color-white;
 }
 
+.reviews__icon {
+  display: none;
+}
+
 
 @media (min-width: 660px) {
   .reviews {
@@ -110,7 +116,7 @@
   }
 
   .reviews__wrapper {
-    padding: 72px 10px 18px;
+    padding: 72px 10px 21px;
   }
 
   .reviews__item {
@@ -155,11 +161,26 @@
   }
 
   .reviews__wrapper {
-    padding: 130px 120px 16px;
+    padding: 170px 10px 16px;
+  }
+
+  .reviews__item {
+    padding: 0 120px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      left: 50%;
+      top: 16%;
+      transform: translateX(-50%);
+      width: 77px;
+      height: 64px;
+      background-image: url("../img/icon-quotes.svg");
+    }
   }
 
   .reviews__author‐name {
-    margin: 5px 0 0;
+    margin: 3px 0;
     font-size: $font-size__title--big;
   }
 
@@ -172,7 +193,47 @@
       display: none;
   }
 
+  .reviews__icon {
+    display: block;
+    fill: #c2c6ca;
+  }
+
+  .reviews__btn:hover > .reviews__icon {
+    fill: $color-gray-7;
+  }
+
+  .reviews__btn:focus > .reviews__icon {
+    fill: $color-gray-8;
+  }
+
+  .reviews__btn:focus {
+    outline: none;
+  }
+
   .reviews__btn-container {
-    display: none;
+    display: block;
+    position: absolute;
+  }
+
+  .reviews__btn {
+    display: block;
+    position: absolute;
+    bottom: 150px;
+    width: 22px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+
+    &:first-child {
+      display: none;
+    }
+
+    &:nth-child(2) {
+      left: 918px;
+    }
+
+    &:last-child {
+      left: 0;
+    }
   }
 }

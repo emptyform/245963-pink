@@ -26,27 +26,34 @@
   }
 
   &--logo {
-    display: inline-block;
-    padding: 21px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 21px;
   }
 }
 
+.page-header__logo-link {
+
+}
+
 .page-header__btn-close {
-  position: absolute;
-  right: 13px;
+  padding: 0;
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
 .page-header__image-btn-close {
-
-  &:active {
-    fill: $color-dark-red;
-  }
+  width: 24px;
+  height: 24px;
 
   &:hover {
-    fill: $color-red;
+    fill: $color-red-2;
+  }
+
+  &:active {
+    fill: $color-red-3
   }
 }
 
@@ -60,13 +67,14 @@
   font-weight: 700;
   text-transform: uppercase;
   color: $color-white;
-
-  &:active {
-    color: $color-dark-red;
-  }
+  cursor: auto;
 
   &:hover {
-    color: $color-red;
+    color: $color-red-2;
+  }
+
+  &:active {
+    color: $color-red-3
   }
 }
 
@@ -84,7 +92,8 @@
     width: 660px;
 
     &--logo {
-      padding: 44px 0 39px 93px;
+      align-items: flex-end;
+      padding: 26px 20px 39px;
     }
   }
 
@@ -93,7 +102,7 @@
   }
 
   .page-header__btn-close {
-    right: 11px;
+    padding: 0;
   }
 }
 

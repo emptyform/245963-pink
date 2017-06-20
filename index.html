@@ -45,6 +45,7 @@
               <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Лого шапка">
             </picture>
           </a>
+
           <button class="page-header__btn-close" type="button" aria-label="Закрыть меню">
             <svg class="page-header__image-btn-close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
               <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
@@ -83,13 +84,13 @@
         <a class="downloads__btn  btn" href="#">Скачать приложение</a>
         <div class="downloads__apps">
           <a class="downloads__apps-item  downloads__apps-item--iphone" href="#">
-            <img src="img/logo-apple.svg" alt="iPhone">
+            <img src="img/logo-apple.svg" width="46.2" height="56.73" alt="iPhone">
           </a>
           <a class="downloads__apps-item  downloads__apps-item--android" href="#">
-            <img src="img/logo-android.svg" alt="Android">
+            <img src="img/logo-android.svg" width="42.06" height="47.02" alt="Android">
           </a>
           <a class="downloads__apps-item  downloads__apps-item--windows" href="#">
-            <img src="img/logo-microsoft.svg" alt="Windows">
+            <img src="img/logo-microsoft.svg" width="43.91" height="41.97" alt="Windows">
           </a>
         </div>
         <p class="downloads__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -170,8 +171,16 @@
         </blockquote>
         <div class="reviews__btn-container">
           <button class="reviews__btn  btn" type="button" aria-label="second slide"></button>
-          <button class="reviews__btn  btn" type="button" aria-label="third slide"></button>
-          <button class="reviews__btn  reviews__btn--active  btn" type="button" aria-label="first slide"></button>
+          <button class="reviews__btn  btn" type="button" aria-label="third slide">
+            <svg class="reviews__icon  reviews__icon--right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
+              <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
+            </svg>
+          </button>
+          <button class="reviews__btn  reviews__btn--active  btn" type="button" aria-label="first slide">
+            <svg class="reviews__icon  reviews__icon--left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
+              <path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
+            </svg>
+          </button>
         </div>
       </div>
     </section>
@@ -182,7 +191,7 @@
           <tr>
             <th class="prices__head  prices__head--null"></th>
             <th class="prices__head">База <span class="prices__USD">1,99 USD</span></th>
-            <th class="prices__head">Стандарт <span class="prices__USD">3,99 USD</span></th>
+            <th class="prices__head  prices__head--label" data-description="Хит">Стандарт <span class="prices__USD">3,99 USD</span></th>
             <th class="prices__head">Анлим <span class="prices__USD">9,99 USD</span></th>
           </tr>
           <tr>
@@ -249,7 +258,7 @@
         </ul>
       </div>
       <div class="contacts__map">
-        <img class="contacts__triangle-image" src="img/bg-triangle-white-footer.svg" alt="Треугольник карта">
+        <img class="contacts__triangle-image" src="img/bg-triangle-white-footer.svg" width="320" height="32" alt="Треугольник карта">
         <div class="contacts__google-map" id="google-map"></div>
       </div>
     </section>
