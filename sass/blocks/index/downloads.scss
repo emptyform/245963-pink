@@ -1,13 +1,15 @@
 .downloads {
   position: relative;
   margin: 0 auto;
-  width: 320px;
+  width: 100%;
   background-color: $color-gray-2;
 }
 
 .downloads__wrapper-image {
   position: relative;
   height: 396px;
+  width: 320px;
+  margin: 0 auto;
   background-position: 50% 100%;
   background-image: url("../img/bg-back-mobile@1x.jpg");
 }
@@ -39,6 +41,15 @@
   padding: 11px 10px 14px;
   border: 3px solid $color-white;
   color: $color-white;
+
+  &:hover {
+    background-color: $color-white;
+    color: $color-red;
+  }
+
+  &:active {
+    color: $color-red-7;
+  }
 }
 
 .downloads__apps {
@@ -62,10 +73,6 @@
 
 
 @media (min-width: 660px) {
-  .downloads {
-    width: 100%;
-  }
-
   .downloads__wrapper-image {
     min-height: 620px;
     width: 660px;
@@ -126,7 +133,6 @@
 
 @media (min-width: 960px) {
   .downloads {
-    width: 100%;
     max-width: 1200px;
   }
 

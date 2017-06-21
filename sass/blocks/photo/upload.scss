@@ -1,9 +1,11 @@
 .upload {
+  width: 100%;
   margin: 0 auto;
-  width: 320px;
 }
 
 .upload__title-container {
+  width: 320px;
+  margin: 0 auto;
   padding: 41px 10px;
   background-color: $color-white;
   box-sizing: border-box;
@@ -21,6 +23,7 @@
 
 .upload__wrapper {
   width: 320px;
+  margin: 0 auto;
   padding: 20px 20px 40px;
   background-color: $color-white-gray;
   box-sizing: border-box;
@@ -52,6 +55,7 @@
   -webkit-appearance: none;
   background: $color-black;
   cursor: pointer;
+  outline: none;
 
   &--active {
     display: block;
@@ -59,6 +63,7 @@
     left: -17px;
     top: 81px;
     width: 242px;
+    outline: none;
   }
 
   &::-webkit-slider-thumb { /* оформление полузка*/
@@ -71,6 +76,22 @@
   }
 }
 
+.upload__tool-image {
+  fill: #b5b9be;
+
+  &--crop {
+    fill: $color-red;
+  }
+}
+
+.upload__tool:hover .upload__tool-image {
+  fill: $color-gray-12;
+}
+
+.upload__tool:active .upload__tool-image {
+  fill: $color-red;
+}
+
 .upload__btn-post,
 .upload__btn-cancel {
   width: 280px;
@@ -79,24 +100,46 @@
   color: $color-red;
   background-color: transparent;
   line-height: 18px;
+  outline: none;
+  cursor: pointer;
 }
 
 .upload__btn-post {
   margin: 38px 0 12px;
+
+  &:hover {
+    background-color: $color-red;
+    color: $color-white;
+  }
+
+  &:active {
+    color: $color-red-7;
+  }
 }
 
 .upload__btn-cancel {
   border: 2px solid $color-gray-4;
   color: $color-gray-4;
+
+  &:hover {
+    border-color: $color-gray-13;
+    color: $color-gray-13;
+  }
+
+  &:active {
+    background-color: $color-gray-13;
+    color: $color-gray-4;
+  }
 }
 
 
 @media (min-width: 660px) {
   .upload {
-    width: 100%;
+    width: 660px;
   }
 
   .upload__title-container {
+    width: 440px;
     padding: 45px 0 70px;
   }
 
@@ -161,6 +204,7 @@
   .upload__tool-image {
     width: 25px;
     height: 25px;
+    fill: $color-red;
 
     &--fill {
       height: 22px;

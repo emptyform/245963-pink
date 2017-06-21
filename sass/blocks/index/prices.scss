@@ -3,6 +3,10 @@
   padding: 87px 0 42px;
   margin: 0 auto;
   background-color: $color-white-gray;
+  background-image: url(../img/bg-triangle-white.svg);
+  background-repeat: no-repeat;
+  background-size: 110%;
+  background-position: center -1px;
 }
 
 .prices__wrapper {

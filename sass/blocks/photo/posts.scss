@@ -1,19 +1,25 @@
 .posts {
   position: relative;
+  width: 100%;
   margin: 0 auto;
-  width: 320px;
 }
 
 .posts__wrapper {
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 320px;
   padding: 0 20px;
+  margin: 0 auto;
   box-sizing: border-box;
 }
 
 .posts__item {
   margin-bottom: 20.3px;
+
+  &:first-child {
+    margin-bottom: 20px;
+  }
 
   &:last-child {
     margin-bottom: 0;
@@ -33,27 +39,25 @@
     align-items: flex-start;
     width: 660px;
     padding: 0 20px;
+    margin-top: 48px;
   }
 
   .posts__item {
     margin-bottom: 20px;
-
-    &:first-child {
-      margin-bottom: 49px;
-    }
   }
 }
 
 
 @media (min-width: 960px) {
   .posts {
-    width: 100%;
     max-width: 1200px;
   }
 
   .posts__wrapper {
     width: 960px;
     padding: 0 10px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .posts__item {

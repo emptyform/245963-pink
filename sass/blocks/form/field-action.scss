@@ -16,6 +16,20 @@
   background-color: $color-green;
   color: $color-white;
   cursor: pointer;
+
+
+  &:hover {
+    background-color: $color-green-2;
+  }
+
+  &:active {
+    color: $color-green-3;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: $color-gray-3;
+  }
 }
 
 .field-action__text {

@@ -1,15 +1,18 @@
 .page-header {
   position: relative;
+  width: 100%;
   margin: 0 auto;
+}
+
+.page-header__wrapper {
   width: 320px;
+  margin: 0 auto;
   background-color: $color-background-gray;
-  box-sizing: border-box;
 }
 
 .page-header__items {
-  width: 320px;
   @include reset-ul-style;
-  margin: 0 auto;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -55,6 +58,8 @@
 }
 
 .page-header__btn-close {
+  width: 24px;
+  height: 27px;
   padding: 0;
   background-color: transparent;
   border: none;
@@ -64,18 +69,21 @@
 .page-header__image-btn-close {
   width: 24px;
   height: 24px;
+  fill: $color-white;
 
   &:hover {
     fill: $color-red-2;
   }
 
   &:active {
-    fill: $color-red-3
+    outline: none;
+    fill: $color-red-3;
   }
 }
 
 .page-header__link {
   display: block;
+  position: relative;
   padding: 19px 20px;
   text-align: center;
   text-decoration: none;
@@ -85,6 +93,7 @@
   text-transform: uppercase;
   color: $color-white;
   cursor: auto;
+  box-sizing: border-box;
 
   &:hover {
     color: $color-red;
@@ -101,7 +110,7 @@
     width: 100%;
   }
 
-  .page-header__items {
+  .page-header__wrapper {
     width: 660px;
   }
 
@@ -110,7 +119,7 @@
 
     &--logo {
       align-items: flex-end;
-      padding: 26px 20px 39px;
+      padding: 27px 20px 41px;
     }
   }
 
@@ -124,10 +133,11 @@
   }
 
   .page-header__link {
-    padding: 18px 0 19.5px;
+    padding: 19px 0 19.5px;
   }
 
   .page-header__btn-close {
+    height: 24px;
     padding: 0;
   }
 }
@@ -135,34 +145,35 @@
 
 @media (min-width: 960px) {
   .page-header {
-    width: 100%;
     max-width: 1200px;
   }
 
-  .page-header__items {
+  .page-header__wrapper {
     width: 960px;
-    padding: 21px 0 25px 77px; /* временно */
+  }
+
+  .page-header__items {
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+    padding: 26px 7px 20px 10px;
     background-color: $color-background-gray;
   }
 
   .page-header__item {
     display: inline-block;
     width: auto;
-    margin-right: 69px; /* временно */
+    margin-right: 50px;
     border: none;
-
-    &:nth-child(2) {
-      margin-left: 0;
-    }
 
     &:last-child {
       margin-right: 0;
     }
 
     &--logo {
-      width: 90px; /* временно */
-      margin-right: 150px; /* временно */
-      padding: 18px 5px; /* временно */
+      margin-left: 0;
+      margin-right: 150px;
+      padding: 0;
     }
   }
 
@@ -184,5 +195,16 @@
     line-height: 18px;
     font-weight: 400;
     text-transform: capitalize;
+  }
+
+  .page-header__link:not([href])::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: auto;
+    bottom: 7px;
+    right: 0;
+    left: 0;
+    background-color: $color-white;
   }
 }

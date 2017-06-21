@@ -46,6 +46,16 @@
   font-weight: 100;
   text-decoration: none;
   color: $color-red;
+
+  &:hover {
+    text-decoration: underline;
+    color: $color-gray-10;
+  }
+
+  &:active {
+    text-decoration: none;
+    color: $color-gray-11;
+  }
 }
 
 .contacts__mail {

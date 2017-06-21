@@ -1,0 +1,98 @@
+.popup { /* в скрытом состоянии */
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  &--show { /* Отображет popup */
+    display: block;
+  }
+}
+
+.popup__wrapper {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  transform: translate(-50%, -50%);
+  border: 1px solid $color-gray-3;
+  box-shadow: 0 3px 20px 0 $color-gray-3;
+}
+
+.popup__title {
+  text-align: center;
+  font-size: $font-size__title;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.popup__text {
+  text-align: center;
+  line-height: 24px;
+  margin: 26px 0 38px;
+
+  &--success {
+    margin-bottom: 82px;
+  }
+}
+
+.popup__btn {
+  width: 280px;
+  margin: 0 auto;
+  padding: 17px 10px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  line-height: 30px;
+  background-color: $color-green;
+  color: $color-white;
+  cursor: pointer;
+}
+
+
+@media (min-width: 660px) {
+  .popup__wrapper {
+    width: 460px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .popup__text--success {
+    margin-bottom: 76px;
+  }
+
+  .popup__btn {
+    width: 300px;
+  }
+
+  .popup__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 14px;
+    margin-bottom: 0;
+  }
+
+  .popup__text {
+    font-size: 18px;
+  }
+}
+
+
+@media (min-width: 960px) {
+  .popup__wrapper--success {
+    width: 780px;
+    padding-left: 160px;
+    padding-right: 160px;
+  }
+
+  .popup__text--success {
+    margin-bottom: 85px;
+  }
+
+  .popup__btn--success {
+    width: 460px;
+  }
+}
