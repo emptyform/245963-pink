@@ -5,7 +5,9 @@
 *.pdf
 *.psd
 *.sublime*
+build/
 css/*.css
 img/layouts/*.jpg
+img/symbols.svg
 node_modules/
 Thumbs.db
