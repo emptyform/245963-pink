@@ -1,11 +1,16 @@
 .reasons {
   margin: 0 auto;
   width: 320px;
+  background-color: $color-white-gray;
+  background-image: url(../img/bg-triangle-white.svg);
+  background-repeat: no-repeat;
+  background-size: 110%;
+  background-position: center -1px;
 }
 
 .reasons__items {
   position: relative;
-  width: 280px;
+  width: 320px;
   @include reset-ul-style;
   padding: 62px 20px 0;
   box-sizing: border-box;
@@ -25,7 +30,7 @@
   .reasons__items {
     width: 660px;
     margin: 0 auto;
-    padding: 87px 20px 40px;
+    padding: 75px 20px 40px;
   }
 
   .reasons__item {
@@ -47,17 +52,18 @@
   .reasons__items {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-start;
     width: 960px;
-    padding: 43px 10px 95px;
+    padding: 0 10px 112px;
   }
 
   .reasons__item {
     margin: 0;
 
     &:last-child {
-      margin-top: 75px;
+      margin-top: 110px;
     }
   }
 }

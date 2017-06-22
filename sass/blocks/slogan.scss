@@ -1,4 +1,9 @@
 .slogan {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slogan__wrapper {
   width: 320px;
   margin: 0 auto;
   color: $color-gray-font;
@@ -38,12 +43,12 @@
 
 
 @media (min-width: 660px) {
-  .slogan {
+  .slogan__wrapper {
     width: 660px;
   }
 
   .slogan__text {
-    padding: 49px 30px 35px;
+    padding: 49px 30px 45px;
     font-size: 40px;
     line-height: 47px;
 
@@ -70,16 +75,20 @@
 
 @media (min-width: 960px) {
   .slogan {
+    max-width: 1200px;
+  }
+
+  .slogan__wrapper {
     width: 960px;
   }
 
   .slogan__text {
-    padding: 65px 60px 35px;
+    padding: 65px 60px 85px;
     font-size: 50px;
     line-height: 60px;
 
     &--small {
-      padding: 93px 190px 87px;
+      padding: 93px 190px 88px;
       font-size: $font-size__title;
       line-height: 30px;
     }

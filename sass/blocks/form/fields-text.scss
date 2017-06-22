@@ -110,12 +110,12 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  /*&--phone {
-    background-image: url(#);
+  &--phone {
+    background-image: url("../img/icon-phone.svg");
   }
   &--email {
-    background-image: url(#);
-  }*/
+    background-image: url("../img/icon-mail.svg");
+  }
 }
 
 .fields-text__span {
