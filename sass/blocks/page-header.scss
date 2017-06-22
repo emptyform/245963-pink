@@ -4,12 +4,12 @@
   margin: 0 auto;
   margin-bottom: -66px;
   z-index: 2;
+  background-color: $color-background-gray;
 }
 
 .page-header__wrapper {
   width: 320px;
   margin: 0 auto;
-  background-color: $color-background-gray;
 }
 
 .page-header__items {
@@ -20,7 +20,7 @@
 
 .page-header__item {
   width: 320px;
-  margin: 0 auto;
+  align-items: center;
   box-sizing: border-box;
   border-bottom: 1px solid $color-black;
   border-top: 1px solid $color-light-gray;
@@ -66,6 +66,7 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  outline: none;
 }
 
 .page-header__image-btn-close {
@@ -83,11 +84,26 @@
   }
 }
 
+.page-header__image-btn-open {
+  display: none;
+  width: 24px;
+  height: 23px;
+
+  &:hover {
+    fill: $color-red-2;
+  }
+
+  &:active {
+    outline: none;
+    fill: $color-red-3;
+  }
+}
+
 .page-header__link {
   display: block;
   position: relative;
+  margin: 0 auto;
   padding: 19px 20px;
-  text-align: center;
   text-decoration: none;
   font-size: $font-size__title;
   line-height: 24px;
@@ -104,6 +120,54 @@
   &:active {
     color: $color-gray-9;
   }
+}
+
+/* Closed menu */
+
+.page-header--closed .page-header__item {
+  display: none;
+}
+
+.page-header--closed .page-header__image-btn-open {
+  display: block;
+}
+
+.page-header--closed .page-header__image-btn-close {
+  display: none;
+}
+
+.page-header--closed .page-header__item--logo {
+  display: flex;
+}
+
+/* Opened menu */
+
+.page-header--opened .page-header__item {
+  display: flex;
+}
+
+.page-header--opened .page-header__image-btn-close {
+  display: block;
+}
+
+.page-header--opened .page-header__image-btn-open {
+  display: none;
+}
+
+.page-header--opened .page-header__item--logo {
+  position: static;
+}
+
+.page-header--nojs .page-header__toggle {
+  display: none;
+}
+
+.page-header--nojs .page-header__item {
+  display: block;
+}
+
+.page-header--nojs .page-header__item--logo {
+  position: static;
 }
 
 
@@ -149,11 +213,15 @@
 @media (min-width: 960px) {
   .page-header {
     max-width: 1200px;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    &--closed {
+      display: none;
+    }
   }
 
   .page-header__wrapper {
     width: 960px;
-    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .page-header__items {
@@ -178,6 +246,7 @@
       margin-left: 0;
       margin-right: 150px;
       padding: 0;
+      padding-bottom: 20px;
     }
   }
 
