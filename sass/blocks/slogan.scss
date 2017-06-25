@@ -52,22 +52,21 @@
     font-size: 40px;
     line-height: 47px;
 
-      &--small {
-        padding: 93px 50px 75px;
-        font-size: $font-size__title;
-        line-height: 30px;
-      }
+    &--small {
+      padding: 93px 50px 75px;
+      font-size: $font-size__title;
+      line-height: 30px;
+    }
 
-      &--wide {
-        padding: 93px 50px 19px;
-        font-size: $font-size__title;
-        line-height: 30px;
-      }
+    &--wide {
+      padding: 93px 50px 19px;
+      font-size: $font-size__title;
+      line-height: 30px;
+    }
   }
 
   .slogan__text-span {
     display: block;
-    padding-top: 0;
     padding: 0 10px;
   }
 }

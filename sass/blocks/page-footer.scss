@@ -41,12 +41,12 @@
 
 .page-footer__logo-image:active .page-footer__logo-image-letter {
   fill: #283645;
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .page-footer__logo-image:active .page-footer__logo-image-glasses {
   fill: #D22856;
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .page-footer__social-items {
@@ -73,7 +73,7 @@
 
   &:active > .page-footer__social-image {
     fill: $color-red;
-    opacity: .3;
+    opacity: 0.3;
   }
 }
 
@@ -98,7 +98,6 @@
 }
 
 .page-footer__copyright-link {
-
   &:hover > .page-footer__copyright-image {
     fill: $color-black;
   }

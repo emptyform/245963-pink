@@ -139,14 +139,14 @@
     margin: 8px 15px 0;
   }
 
-  .contacts__map  {
+  .contacts__map {
     width: 660px;
     height: 380px;
     background-image: url("../img/bg-map-tablet@1x.jpg");
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .contacts__map  {
+    .contacts__map {
       background-image: url("../img/bg-map-tablet@2x.jpg");
     }
   }
@@ -174,7 +174,7 @@
 
   .contacts__items {
     flex-wrap: nowrap;
-    justify-content:center;
+    justify-content: center;
   }
 
   .contacts__item {

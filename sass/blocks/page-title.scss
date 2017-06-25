@@ -4,18 +4,15 @@
   width: 100%;
   min-height: 237px;
   background-color: $color-gray-2;
-  background-size: cover;
   background-size: 320px 237px;
   background-repeat: no-repeat;
   background-position: top;
   background-image: url("../img/bg-back-mobile@1x.jpg");
 
   &--full {
-    background-image:
-    url("../img/iphone-hand-mobile@1x.png"),
-    url("../img/bg-back-mobile@1x.jpg");
+    background-image: url("../img/iphone-hand-mobile@1x.png"),
+      url("../img/bg-back-mobile@1x.jpg");
     background-position: left 176px, center top;
-    background-size: cover;
     background-size: 258px, 700px;
     min-height: 736px;
   }
@@ -29,9 +26,8 @@
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .page-title--full {
-    background-image:
-    url("../img/iphone-hand-mobile@2x.png"),
-    url("../img/bg-back-mobile@2x.jpg");
+    background-image: url("../img/iphone-hand-mobile@2x.png"),
+      url("../img/bg-back-mobile@2x.jpg");
   }
 }
 
@@ -107,9 +103,8 @@
 
     &--full {
       min-height: 728px;
-      background-image:
-      url("../img/iphone-hand-tablet@1x.png"),
-      url("../img/bg-back-tablet@1x.jpg");
+      background-image: url("../img/iphone-hand-tablet@1x.png"),
+        url("../img/bg-back-tablet@1x.jpg");
       background-position: center bottom, center top;
       background-size: 700px, cover;
     }
@@ -123,9 +118,8 @@
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .page-title--full {
-      background-image:
-      url("../img/iphone-hand-tablet@2x.png"),
-      url("../img/bg-back-tablet@2x.jpg");
+      background-image: url("../img/iphone-hand-tablet@2x.png"),
+        url("../img/bg-back-tablet@2x.jpg");
     }
   }
 
@@ -176,17 +170,13 @@
 @media (min-width: 960px) {
   .page-title {
     max-width: 1200px;
-  }
-
-  .page-title {
     min-height: 400px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position: center top ;
     background-size: 290%;
 
     &--full {
-      background-image:
-        url("../img/iphone-hand-desktop@1x.png"),
+      background-image: url("../img/iphone-hand-desktop@1x.png"),
         url("../img/bg-back-desktop@1x.jpg");
       min-height: 859px;
       background-position: left 25px bottom, center top;
@@ -202,9 +192,8 @@
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .page-title--full {
-      background-image:
-      url("../img/iphone-hand-desktop@2x.png"),
-      url("../img/bg-back-desktop@2x.jpg");
+      background-image: url("../img/iphone-hand-desktop@2x.png"),
+        url("../img/bg-back-desktop@2x.jpg");
     }
   }
 

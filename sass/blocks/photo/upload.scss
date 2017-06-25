@@ -51,7 +51,7 @@
 
 .upload__tool-control {
   display: none;
-  height: 2px !important;
+  height: 2px;
   -webkit-appearance: none;
   background: $color-black;
   cursor: pointer;
@@ -222,7 +222,6 @@
     display: block;
     position: relative;
     width: 202px;
-    height: 5px;
     left: 0;
     top: 0;
     padding: 0;

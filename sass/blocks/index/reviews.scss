@@ -23,8 +23,8 @@
 }
 
 .reviews__author‐name {
-  margin: 0px 0px 10px;
-  padding: 0px 20px;
+  margin: 0 0 10px;
+  padding: 0 20px;
   font-size: $font-size__title;
   font-weight: 700;
   font-style: normal;
@@ -42,11 +42,11 @@
   color: $color-gray-font;
   quotes: "«" "»"; /* Устанавливаем вид кавычек */
 
-  &:before {
+  &::before {
     content: open-quote; /* Добавляем перед текстом открывающую кавычку */
   }
 
-  &:after {
+  &::after {
     content: close-quote; /* Добавляем после текста закрывающую кавычку */
   }
 }
@@ -188,9 +188,9 @@
     font-size: $font-size__title;
   }
 
-  .reviews__text:before,
-  .reviews__text:after {
-      display: none;
+  .reviews__text::before,
+  .reviews__text::after {
+    display: none;
   }
 
   .reviews__icon {
