@@ -22,8 +22,9 @@ gulp.task("clean", function () {
 gulp.task("copy", function() {
   return gulp.src([
     "fonts/**/*.{woff,woff2}",
-    "img/*.{svg,png,jpg,gif}",
+    "img/**/*.{svg,png,jpg,gif}",
     "js/**",
+    "node_modules/pixel-glass/**",
     "*.html"
   ], {
     base: "."

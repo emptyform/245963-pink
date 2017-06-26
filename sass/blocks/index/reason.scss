@@ -12,6 +12,7 @@
 
 .reason__title {
   text-align: center;
+  max-width: 280px;
   margin: 0 0 11px;
   padding: 0 20px;
   font-size: $font-size__title;
@@ -20,6 +21,7 @@
 }
 
 .reason__text {
+  max-width: 280px;
   text-align: center;
   margin: 0 0 14px;
   line-height: 24px;
@@ -78,6 +80,7 @@
   }
 
   .reason__title {
+    max-width: 320px;
     padding: 0;
     text-align: left;
 
@@ -90,6 +93,7 @@
   }
 
   .reason__text {
+    max-width: 320px;
     text-align: left;
 
     &--wide {
@@ -152,11 +156,13 @@
   .reason__title {
     padding: 0;
     margin-bottom: 26px;
+    max-width: 250px;
     text-align: center;
     font-size: $font-size__title--huge;
     line-height: 30px;
 
     &--wide {
+      max-width: 550px;
       text-align: left;
       margin-right: 20px;
       margin-bottom: 23px;
@@ -166,6 +172,7 @@
   .reason__text {
     text-align: center;
     margin: 0;
+    max-width: 250px;
     font-size: $font-size__title;
     line-height: 30px;
     font-weight: 400;
@@ -174,6 +181,7 @@
       text-align: left;
       line-height: 30px;
       margin: 0 15px 32px 0;
+      max-width: 550px;
     }
   }
 

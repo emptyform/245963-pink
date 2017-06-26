@@ -48,12 +48,17 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 280px;
+  max-width: 280px;
   padding: 18px 22px 20px 18px;
   margin: 0 auto;
   box-sizing: border-box;
   flex-grow: 1;
   background-color: $color-white-gray;
+
+  &--wide {
+    max-width: 320px;
+    margin: 0 20px;
+  }
 }
 
 .post__author‐name {
@@ -68,6 +73,7 @@
 }
 
 .post__text {
+  max-width: 246px;
   margin: 0 0 10px;
   line-height: 24px;
   color: $color-gray-font;
@@ -128,11 +134,16 @@
 
   .post__container {
     width: 300px;
+    max-width: 300px;
     min-height: 155px;
     padding: 25px 27px 20px;
+    margin-left: 0;
+    margin-right: 0;
 
     &--wide {
       width: 620px;
+      max-width: 620px;
+      margin: 0 20px;
       flex-direction: row-reverse;
       justify-content: space-between;
       flex-wrap: wrap;
@@ -149,6 +160,8 @@
     margin-bottom: auto;
 
     &--wide {
+      width: 620px;
+      max-width: 620px;
       order: 3;
     }
   }
@@ -206,12 +219,16 @@
 
     &--wide {
       width: 940px;
+      max-width: 940px;
       min-height: 95px;
       padding: 25px 30px 22px 27px;
+      margin-right: 10px;
+      margin-left: 10px;
     }
   }
 
   .post__text--wide {
-    margin-right: 20px;
+    width: 940px;
+    max-width: 940px;
   }
 }

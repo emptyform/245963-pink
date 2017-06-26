@@ -39,14 +39,15 @@
 .upload__items {
   margin: 0 auto;
   @include reset-ul-style;
-  padding: 16px 18px 54px;
+  padding: 22px 10px 54px 18px;
   border-bottom: 2px solid $color-gray-4;
 }
 
 .upload__item {
   position: relative;
   display: inline-block;
-  margin: 17px;
+  margin: 15px;
+  vertical-align: middle;
 }
 
 .upload__tool-control {
