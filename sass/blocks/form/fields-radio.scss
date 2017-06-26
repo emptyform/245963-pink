@@ -3,83 +3,83 @@
   background-color: $color-white-gray;
 }
 
-  .fields-radio__items {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 320px;
-    margin: 38px 0 27px;
-    padding: 0 20px;
-    border-width: 0;
-    box-sizing: border-box;
+.fields-radio__items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  margin: 38px 0 27px;
+  padding: 0 20px;
+  border-width: 0;
+  box-sizing: border-box;
+}
+
+.fields-radio__legend {
+  margin: 0 20px 15px;
+  text-align: center;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $color-red;
+}
+
+.fields-radio__item {
+  display: flex;
+  width: 280px;
+  margin: 5px 0 0;
+  box-sizing: border-box;
+
+  &:last-child {
+    margin-bottom: 0;
   }
+}
 
-  .fields-radio__legend {
-    margin: 0 20px 15px;
-    text-align: center;
-    line-height: 18px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: $color-red;
-  }
+.fields-radio__input {
+  display: none;
+}
 
-  .fields-radio__item {
-    display: flex;
-    width: 280px;
-    margin: 5px 0px 0;
-    box-sizing: border-box;
+.fields-radio__text {
+  position: relative;
+  display: block;
+  padding: 15px 0 15px 70px;
+  cursor: pointer;
+  font-size: $font-size__title;
+  line-height: 40px;
+  font-weight: 400;
 
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  .fields-radio__input {
-    display: none;
-  }
-
-  .fields-radio__text {
-    position: relative;
-    display: block;
-    padding: 15px 0 15px 70px;
-    cursor: pointer;
-    font-size: $font-size__title;
-    line-height: 40px;
-    font-weight: 400;
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 40px;
-      height: 40px;
-      left: 0;
-      top: 15px;
-      border-radius: 50%;
-      border: 2px solid $color-gray-3;
-      background-color: $color-white;
-      box-sizing: border-box;
-    }
-  }
-
-  .fields-radio__text:hover::after {
-    border-color: $color-black;
-  }
-
-  .fields-radio__text:active::after {
-    border-color: $color-red;
-  }
-
-  .fields-radio__input:checked + .fields-radio__text::before {
+  &::after {
     content: "";
     position: absolute;
-    width: 15px;
-    height: 15px;
-    top: 27px;
-    left: 13px;
+    width: 40px;
+    height: 40px;
+    left: 0;
+    top: 15px;
     border-radius: 50%;
-    background-color: $color-red;
-    z-index: 1;
+    border: 2px solid $color-gray-3;
+    background-color: $color-white;
+    box-sizing: border-box;
   }
+}
+
+.fields-radio__text:hover::after {
+  border-color: $color-black;
+}
+
+.fields-radio__text:active::after {
+  border-color: $color-red;
+}
+
+.fields-radio__input:checked + .fields-radio__text::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 27px;
+  left: 13px;
+  border-radius: 50%;
+  background-color: $color-red;
+  z-index: 1;
+}
 
 
 @media (min-width: 660px) {

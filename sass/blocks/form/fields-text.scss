@@ -113,13 +113,14 @@
   &--phone {
     background-image: url("../img/icon-phone.svg");
   }
+
   &--email {
     background-image: url("../img/icon-mail.svg");
   }
 }
 
 .fields-text__span {
-  padding: 10px 0px 0px 20px;
+  padding: 10px 0 0 20px;
   font-size: 13px;
   color: red;
 }
@@ -240,7 +241,7 @@
   }
 
   .fields-text__span {
-    padding: 10px 0px 0px 20px;
+    padding: 10px 0 0 20px;
     font-size: 13px;
   }
 

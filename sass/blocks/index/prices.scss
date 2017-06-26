@@ -154,7 +154,7 @@
     width: 70px;
     height: 73px;
     left: -2px;
-    top: 0px;
+    top: 0;
     background-image: url("../img/bg-hit.svg");
     background-repeat: no-repeat;
   }
@@ -207,11 +207,7 @@
   .prices__included,
   .prices__excluded {
     width: 157px;
-    padding: 0px 10px 4px;
-  }
-
-  .prices__included,
-  .prices__excluded {
+    padding: 0 10px 4px;
     background-position: center;
   }
 
@@ -225,14 +221,13 @@
   }
 
   .prices__head--label {
-
     &::before {
       left: 5px;
       top: 5px;
     }
 
     &::after {
-      left: 0px;
+      left: 0;
       background-image: url("../img/bg-hit-tablet.svg");
     }
   }
@@ -260,7 +255,7 @@
     width: 234px;
     padding: 16px 55px 22px;
     line-height: 30px;
-    font-size: $font-size__title
+    font-size: $font-size__title;
   }
 
   .prices__USD {
@@ -281,14 +276,13 @@
   }
 
   .prices__head--label {
-
     &::before {
       left: 10px;
       top: 10px;
     }
 
     &::after {
-      left: 0px;
+      left: 0;
       background-image: url("../img/bg-hit.svg");
     }
   }
