@@ -71,6 +71,10 @@
     border-color: $color-black;
   }
 
+  &:active {
+    border-color: $color-red-4;
+  }
+
   &:active > .page-footer__social-image {
     fill: $color-red;
     opacity: 0.3;

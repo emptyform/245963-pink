@@ -48,6 +48,7 @@
   display: inline-block;
   margin: 15px;
   vertical-align: middle;
+  box-sizing: border-box;
 }
 
 .upload__tool-control {
@@ -238,7 +239,7 @@
     padding-top: 15px;
     font-size: $font-size__title;
     font-weight: 700;
-    letter-spacing: 1px;
+    box-sizing: border-box;
   }
 
   .upload__btn-post {

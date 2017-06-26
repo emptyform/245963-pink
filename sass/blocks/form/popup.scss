@@ -1,10 +1,15 @@
 .popup { /* в скрытом состоянии */
   display: none;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
+  position: absolute;
+  width: 320px;
+  top: 1423px;
+  transform: translate(50%, 50%);
+  box-sizing: border-box;
   z-index: 2;
+
+  &--success {
+    top: 1600px;
+  }
 
   &--show { /* Отображет popup */
     display: block;
@@ -12,15 +17,13 @@
 }
 
 .popup__wrapper {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  left: 50%;
+  width: 320px;
   padding-top: 20px;
   padding-bottom: 50px;
-  transform: translate(-50%, -50%);
   border: 1px solid $color-gray-3;
-  box-shadow: 0 3px 20px 0 $color-gray-3;
+  box-sizing: border-box;
+  box-shadow: 0 5px 25px 0 $color-gray-3;
+  background-color: $color-white;
 }
 
 .popup__title {
@@ -84,8 +87,10 @@
 @media (min-width: 960px) {
   .popup__wrapper--success {
     width: 780px;
-    padding-left: 160px;
-    padding-right: 160px;
+    /*padding-left: 160px;
+    padding-right: 160px;*/
+    top: 980px;
+    left: -25%;
   }
 
   .popup__text--success {
