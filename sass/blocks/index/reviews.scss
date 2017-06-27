@@ -1,5 +1,5 @@
 .reviews {
-  width: 320px;
+  max-width: 320px;
   margin: 0 auto;
 }
 
@@ -114,7 +114,7 @@
 
 @media (min-width: 660px) {
   .reviews {
-    width: 660px;
+    max-width: 660px;
   }
 
   .reviews__wrapper {
@@ -162,7 +162,7 @@
 
 @media (min-width: 960px) {
   .reviews {
-    width: 960px;
+    max-width: 960px;
   }
 
   .reviews__wrapper {
@@ -238,7 +238,7 @@
     }
 
     &:nth-child(2) {
-      left: 918px;
+      left: 910px;
     }
 
     &:last-child {

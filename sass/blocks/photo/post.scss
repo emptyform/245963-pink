@@ -4,22 +4,23 @@
   flex-direction: column;
   width: 280px;
   box-sizing: border-box;
+}
 
-  &--wide {
-    width: 320px;
-    margin: 0 auto;
-  }
+.post--wide {
+  width: 320px;
+  margin: 0 auto;
 }
 
 .post__image,
 .post__link-full-image {
   width: 280px;
   height: 180px;
+}
 
-  &--wide {
-    width: 320px;
-    height: 137px;
-  }
+.post__image--wide,
+.post__link-full-image--wide {
+  width: 320px;
+  height: 137px;
 }
 
 .post___label-block {
@@ -113,6 +114,7 @@
 
     &--wide {
       width: 660px;
+      max-width: 660px;
     }
   }
 
@@ -194,6 +196,7 @@
 
     &--wide {
       width: 960px;
+      max-width: 960px;
     }
   }
 

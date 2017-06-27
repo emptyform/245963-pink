@@ -24,3 +24,8 @@ BODY > * > * > * {
     outline: 2px dotted dodgerblue;
     outline-offset: -4px;
 }
+
+BODY > * > * > * > * {
+    outline: 2px solid green;
+    outline-offset: -6px;
+}

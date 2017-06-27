@@ -4,7 +4,7 @@
 }
 
 .slogan__wrapper {
-  width: 320px;
+  max-width: 320px;
   margin: 0 auto;
   color: $color-gray-font;
 }
@@ -44,11 +44,11 @@
 
 @media (min-width: 660px) {
   .slogan__wrapper {
-    width: 660px;
+    max-width: 660px;
   }
 
   .slogan__text {
-    padding: 49px 30px 45px;
+    padding: 49px 25px 45px;
     font-size: 40px;
     line-height: 47px;
 
@@ -67,7 +67,7 @@
 
   .slogan__text-span {
     display: block;
-    padding: 0 10px;
+    padding: 0 20px;
   }
 }
 
@@ -78,7 +78,7 @@
   }
 
   .slogan__wrapper {
-    width: 960px;
+    max-width: 960px;
   }
 
   .slogan__text {

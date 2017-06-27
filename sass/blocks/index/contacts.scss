@@ -1,6 +1,6 @@
 .contacts {
   margin: 0 auto;
-  width: 320px;
+  max-width: 320px;
 }
 
 .contacts__wrapper {
@@ -68,6 +68,7 @@
 }
 
 .contacts__map {
+  max-width: 320px;
   position: relative;
   background: $color-white-gray url("../img/bg-map-mobile@1x.png") center top no-repeat;
   background-size: cover;
@@ -97,7 +98,7 @@
 
 @media (min-width: 660px) {
   .contacts {
-    width: 660px;
+    max-width: 660px;
   }
 
   .contacts__wrapper {
@@ -142,7 +143,7 @@
   }
 
   .contacts__map {
-    width: 660px;
+    max-width: 660px;
     height: 380px;
     background-image: url("../img/bg-map-tablet@1x.jpg");
 
@@ -159,7 +160,7 @@
   }
 
   .contacts__google-map {
-    width: 660px;
+    max-width: 660px;
     height: 380px;
   }
 }
