@@ -2,13 +2,13 @@
   display: none;
   position: fixed;
   width: 100%;
-  top: 20%;
+  top: 30%;
   left: 0;
   box-sizing: border-box;
   z-index: 2;
 
   &--success {
-    top: 40%;
+    top: 45%;
   }
 
   &--show { /* Отображет popup */
