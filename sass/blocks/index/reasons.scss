@@ -1,16 +1,17 @@
 .reasons {
   margin: 0 auto;
-  width: 320px;
+  max-width: 320px;
   background-color: $color-white-gray;
   background-image: url(../img/bg-triangle-white.svg);
   background-repeat: no-repeat;
   background-size: 110%;
   background-position: center -1px;
+  box-sizing: border-box;
 }
 
 .reasons__items {
   position: relative;
-  width: 320px;
+  max-width: 320px;
   @include reset-ul-style;
   padding: 62px 20px 0;
   box-sizing: border-box;
@@ -24,18 +25,18 @@
 
 @media (min-width: 660px) {
   .reasons {
-    width: 660px;
+    max-width: 660px;
   }
 
   .reasons__items {
-    width: 660px;
+    max-width: 660px;
     margin: 0 auto;
     padding: 75px 20px 40px;
   }
 
   .reasons__item {
     margin: 0;
-    margin-left: 310px;
+    margin-left: 302px;
 
     &:last-child {
       margin-top: 105px;
@@ -46,7 +47,7 @@
 
 @media (min-width: 960px) {
   .reasons {
-    width: 960px;
+    max-width: 960px;
   }
 
   .reasons__items {
@@ -55,8 +56,8 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-start;
-    width: 960px;
-    padding: 0 10px 112px;
+    max-width: 960px;
+    padding: 0 0 112px;
   }
 
   .reasons__item {

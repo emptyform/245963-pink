@@ -2,9 +2,14 @@
   display: none;
   position: fixed;
   width: 100%;
-  top: 0;
+  top: 30%;
   left: 0;
+  box-sizing: border-box;
   z-index: 2;
+
+  &--success {
+    top: 45%;
+  }
 
   &--show { /* Отображет popup */
     display: block;
@@ -13,14 +18,19 @@
 
 .popup__wrapper {
   position: absolute;
-  width: 100%;
-  top: 50%;
+  width: 320px;
   left: 50%;
+  transform: translate(-50%, -50%);
   padding-top: 20px;
   padding-bottom: 50px;
-  transform: translate(-50%, -50%);
   border: 1px solid $color-gray-3;
-  box-shadow: 0 3px 20px 0 $color-gray-3;
+  box-sizing: border-box;
+  box-shadow: 0 5px 25px 0 $color-gray-3;
+  background-color: $color-white;
+
+  &--success {
+    background-image: linear-gradient(to bottom, $color-white 217px, $color-white-gray 163px);
+  }
 }
 
 .popup__title {
@@ -33,7 +43,7 @@
 .popup__text {
   text-align: center;
   line-height: 24px;
-  margin: 26px 0 38px;
+  margin: 25px 20px 33px;
 
   &--success {
     margin-bottom: 82px;
@@ -42,7 +52,6 @@
 
 .popup__btn {
   width: 280px;
-  margin: 0 auto;
   padding: 17px 10px;
   border-radius: 2px;
   text-transform: uppercase;
@@ -56,8 +65,12 @@
 @media (min-width: 660px) {
   .popup__wrapper {
     width: 460px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 65px;
+    padding-right: 65px;
+
+    &--success {
+      background-image: linear-gradient(to bottom, $color-white 271px, $color-white-gray 163px);
+    }
   }
 
   .popup__text--success {
@@ -84,12 +97,13 @@
 @media (min-width: 960px) {
   .popup__wrapper--success {
     width: 780px;
-    padding-left: 160px;
-    padding-right: 160px;
+    padding-left: 180px;
+    padding-right: 180px;
+    background-image: linear-gradient(to bottom, $color-white 214px, $color-white-gray 163px);
   }
 
   .popup__text--success {
-    margin-bottom: 85px;
+    margin-bottom: 95px;
   }
 
   .popup__btn--success {

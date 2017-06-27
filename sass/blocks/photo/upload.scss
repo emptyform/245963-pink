@@ -4,7 +4,7 @@
 }
 
 .upload__title-container {
-  width: 320px;
+  max-width: 320px;
   margin: 0 auto;
   padding: 41px 10px;
   background-color: $color-white;
@@ -22,7 +22,7 @@
 }
 
 .upload__wrapper {
-  width: 320px;
+  max-width: 320px;
   margin: 0 auto;
   padding: 20px 20px 40px;
   background-color: $color-white-gray;
@@ -39,14 +39,16 @@
 .upload__items {
   margin: 0 auto;
   @include reset-ul-style;
-  padding: 16px 18px 54px;
+  padding: 22px 10px 54px 18px;
   border-bottom: 2px solid $color-gray-4;
 }
 
 .upload__item {
   position: relative;
   display: inline-block;
-  margin: 17px;
+  margin: 15px;
+  vertical-align: middle;
+  box-sizing: border-box;
 }
 
 .upload__tool-control {
@@ -135,7 +137,7 @@
 
 @media (min-width: 660px) {
   .upload {
-    width: 660px;
+    max-width: 660px;
   }
 
   .upload__title-container {
@@ -152,7 +154,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    width: 660px;
+    max-width: 660px;
     padding: 57px 20px 55px;
   }
 
@@ -237,7 +239,7 @@
     padding-top: 15px;
     font-size: $font-size__title;
     font-weight: 700;
-    letter-spacing: 1px;
+    box-sizing: border-box;
   }
 
   .upload__btn-post {
@@ -258,7 +260,7 @@
   }
 
   .upload__wrapper {
-    width: 940px;
+    max-width: 940px;
     margin: 0 auto;
     padding: 56px 61px 56px 80px;
   }

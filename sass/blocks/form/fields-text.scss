@@ -6,7 +6,7 @@
 .fields-text__items {
   display: flex;
   flex-direction: column;
-  width: 320px;
+  max-width: 320px;
   margin: 0 0 5px;
   padding: 0 20px;
   border-width: 0;
@@ -163,7 +163,7 @@
 
   .fields-text__items {
     align-items: center;
-    width: 620px;
+    max-width: 620px;
     margin: 0;
     padding: 0;
 
@@ -257,7 +257,7 @@
 @media (min-width: 960px) {
   .fields-text {
     align-items: flex-end;
-    width: 940px;
+    max-width: 940px;
     padding: 0;
 
     &:first-child {
@@ -272,16 +272,18 @@
     padding-top: 18px;
     padding-right: 37px;
 
-    &--contacts {
-      width: 936px;
-      padding: 28px 60px 13px;
-      margin: 0;
-    }
-
     &--review {
-      width: 940px;
+      width: 930px;
+      max-width: 930px;
       padding: 27px 0 45px;
     }
+  }
+
+  .fields-text__items--contacts {
+    width: 930px;
+    max-width: 936px;
+    padding: 28px 50px 13px;
+    margin: 0;
   }
 
   .fields-text__legend {

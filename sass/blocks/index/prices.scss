@@ -1,5 +1,5 @@
 .prices {
-  width: 320px;
+  max-width: 320px;
   padding: 87px 0 42px;
   margin: 0 auto;
   background-color: $color-white-gray;
@@ -10,7 +10,7 @@
 }
 
 .prices__wrapper {
-  width: 320px;
+  max-width: 320px;
   overflow: hidden;
   margin: 0;
   padding-top: 4px;
@@ -163,25 +163,26 @@
 
 @media (min-width: 660px) {
   .prices {
-    width: 660px;
+    max-width: 660px;
     padding: 0;
     margin: 0 auto;
   }
 
   .prices__wrapper {
+    max-width: 660px;
     padding: 85px 20px 24px 17px;
     overflow: visible;
   }
 
   .prices__table {
-    width: 628px;
+    max-width: 626px;
     margin-left: 0;
     box-sizing: border-box;
     border: 2px solid $color-white-gray;
   }
 
   .prices__head {
-    width: 157px;
+    width: 156px;
     padding: 12px 30px 12px 27px;
     font-size: 16px;
     line-height: 28px;
@@ -206,7 +207,7 @@
 
   .prices__included,
   .prices__excluded {
-    width: 157px;
+    width: 156px;
     padding: 0 10px 4px;
     background-position: center;
   }
@@ -236,23 +237,23 @@
 
 @media (min-width: 960px) {
   .prices {
-    width: 960px;
+    max-width: 960px;
   }
 
   .prices__wrapper {
-    width: 960px;
-    padding: 133px 10px 94px 6px;
+    max-width: 960px;
+    padding: 133px 0 94px 5px;
   }
 
   .prices__table {
-    width: 948px;
+    max-width: 938px;
     padding: 0;
     box-sizing: border-box;
     border: 2px solid $color-white-gray;
   }
 
   .prices__head {
-    width: 234px;
+    width: 232px;
     padding: 16px 55px 22px;
     line-height: 30px;
     font-size: $font-size__title;
@@ -263,7 +264,7 @@
   }
 
   .prices__name {
-    width: 234px;
+    width: 232px;
     padding: 8px 18px 10px 20px;
     font-size: $font-size__title;
     line-height: 40px;
@@ -271,7 +272,7 @@
 
   .prices__included,
   .prices__excluded {
-    width: 234px;
+    width: 232px;
     padding: 5px 90px;
   }
 

@@ -1,10 +1,10 @@
 .fields-checkbox {
-  width: 320px;
+  max-width: 320px;
   background-color: $color-white-gray;
 }
 
 .fields-checkbox__items {
-  width: 320px;
+  max-width: 320px;
   margin: 39px 0 27px;
   padding: 0 20px;
   border-width: 0;
@@ -91,12 +91,12 @@
 
 @media (min-width: 660px) {
   .fields-checkbox {
-    width: 620px;
+    max-width: 620px;
     background-color: $color-white;
   }
 
   .fields-checkbox__items {
-    width: 620px;
+    max-width: 620px;
     margin: 0;
     padding: 28px 8px 38px 58px;
     border: 2px solid $color-gray-3;
@@ -134,26 +134,47 @@
 
 @media (min-width: 960px) {
   .fields-checkbox {
-    width: 940px;
+    max-width: 940px;
   }
 
   .fields-checkbox__items {
-    width: 940px;
-    padding: 27px 50px 23px 57px;
+    max-width: 938px;
+    padding: 25px 0 23px 57px;
   }
 
   .fields-checkbox__container {
+    flex-direction: row;
     justify-content: space-between;
     align-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    width: auto;
-    height: 165px;
+    width: 872px;
   }
 
   .fields-checkbox__item {
-    width: auto;
     margin: 0;
+    margin-bottom: 23px;
+    max-width: 260px;
+
+    &:nth-child(2) {
+      order: 4;
+    }
+
+    &:nth-child(3) {
+      order: 2;
+    }
+
+    &:nth-child(4) {
+      order: 5;
+    }
+
+    &:nth-child(5) {
+      order: 3;
+    }
+
+    &:nth-child(6) {
+      order: 6;
+    }
   }
 
   .fields-checkbox__text {

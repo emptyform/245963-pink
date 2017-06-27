@@ -8,7 +8,7 @@
 }
 
 .page-header__wrapper {
-  width: 320px;
+  max-width: 320px;
   margin: 0 auto;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .page-header__item {
-  width: 320px;
+  max-width: 320px;
   align-items: center;
   box-sizing: border-box;
   border-bottom: 1px solid $color-black;
@@ -178,11 +178,11 @@
   }
 
   .page-header__wrapper {
-    width: 660px;
+    max-width: 660px;
   }
 
   .page-header__item {
-    width: 660px;
+    max-width: 660px;
 
     &--logo {
       align-items: flex-end;
@@ -221,13 +221,13 @@
   }
 
   .page-header__wrapper {
-    width: 960px;
+    max-width: 960px;
   }
 
   .page-header__items {
     display: flex;
     justify-content: space-between;
-    width: 960px;
+    max-width: 960px;
     padding: 26px 7px 20px 10px;
   }
 

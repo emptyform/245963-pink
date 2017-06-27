@@ -8,7 +8,7 @@
 }
 
 .page-footer__wrapper {
-  width: 320px;
+  max-width: 320px;
   margin: 0 auto;
   padding: 41px 60px;
   box-sizing: border-box;
@@ -71,6 +71,10 @@
     border-color: $color-black;
   }
 
+  &:active {
+    border-color: $color-red-4;
+  }
+
   &:active > .page-footer__social-image {
     fill: $color-red;
     opacity: 0.3;
@@ -126,7 +130,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 660px;
+    max-width: 660px;
     margin: 0 auto;
     padding: 25px 20px;
   }
@@ -154,7 +158,7 @@
   }
 
   .page-footer__wrapper {
-    width: 960px;
+    max-width: 960px;
     padding: 60px 10px;
   }
 
